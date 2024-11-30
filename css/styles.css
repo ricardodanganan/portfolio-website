@@ -39,9 +39,10 @@ main {
 
 /* Start of Hero Section */
 #hero {
-    background: linear-gradient(to right, #007bff, #0056b3);
-    color: white;
-    min-height: 100vh;
+    background-color: #424242; /* Light gray background */
+    color: white; /* Adjust text color for contrast */
+    padding: 100px 0;
+    min-height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -85,12 +86,21 @@ main {
 }
 /* End of Hero Section */
 
-/* Start of About Me Section */
-#about img {
-    max-width: 100%;
-    border: 5px solid #007bff;
-}
-/* End of About Me Section */
+/* About Me Section */
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  #about img {
+    height: 100%; /* Adjust the height to match the text container */
+    max-height: 200px; /* Limit the maximum height to ensure responsiveness */
+    object-fit: cover; /* Ensure the image doesn't distort */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+  }
+/* End of About Me Section */  
 
 /* Start of Skills Section */
 #skills .p-3 {
