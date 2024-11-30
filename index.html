@@ -126,7 +126,7 @@
         <!-- Education Section -->
         <section id="education" class="py-5 bg-light">
             <div class="container">
-                <h2 class="fw-bold text-center mb-4">Module Grades</h2>
+                <h2 class="fw-bold text-center mb-4">Module Grades and Honors</h2>
                 <div class="accordion" id="educationAccordion">
                     <!-- Third Year -->
                     <div class="accordion-item">
@@ -206,6 +206,73 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Honors and Awards -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingHonors">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseHonors" aria-expanded="false" aria-controls="collapseHonors">
+                                Honors & Awards
+                            </button>
+                        </h2>
+                        <div id="collapseHonors" class="accordion-collapse collapse" aria-labelledby="headingHonors"
+                            data-bs-parent="#educationAccordion">
+                            <div class="accordion-body">
+                                <!-- Best Future Solution Award -->
+                                <div class="mb-4">
+                                    <h5 class="fw-bold">Best Future Solution Award</h5>
+                                    <p class="text-muted">
+                                        Health Hackathon in Collaboration with Tallaght University Hospital &
+                                        Amazon Web Services (AWS) · Oct 2024
+                                    </p>
+                                    <p class="mb-1">
+                                        <img src="img/technological_university_dublin_logo.jpg" alt="TU Dublin Logo" class="me-2"
+                                            style="width: 25px; height: 25px;">
+                                        <strong>Technological University Dublin</strong>
+                                    </p>
+                                    <p>
+                                        Recognized for an innovative wayfinding solution to enable better navigation to healthcare 
+                                        appointments in the community, awarded "Best Future Solution" Worked in a team to build an 
+                                        easy to use application that assists patients with finding health care facilities 
+                                        and scheduling appointments.
+                                    </p>
+                                </div>
+                                <!-- Full Distinction - QQI Level 6 in Computer Networks -->
+                                <div>
+                                    <h5 class="fw-bold">Full Distinction - QQI Level 6 in Computer Networks</h5>
+                                    <p class="text-muted">
+                                        Bray Institute of Further Education · Dec 2021
+                                    </p>
+                                    <p class="mb-1">
+                                        <img src="img/Bife-Logo.png" alt="BIFE Logo" class="me-2"
+                                            style="width: 25px; height: 25px;">
+                                        <strong>Bray Institute of Further Education</strong> · June 2021
+                                    </p>
+                                    <p>
+                                        I completed a Full Distinction for QQI Level 6 in Computer Networks course 
+                                        during the 2020-2021 academic year from Bray Institute of Further Education, 
+                                        Showing my good technical skills, a willingness to learn and a passion for Computing.
+                                    </p>
+                                </div>
+                                <!-- Full Distinction - QQI Level 5 Computer Science -->
+                                <div>
+                                    <h5 class="fw-bold">Full Distinction - QQI Level 5 Computer Science</h5>
+                                    <p class="text-muted">
+                                        Bray Institute of Further Education · Dec 2020
+                                    </p>
+                                    <p class="mb-1">
+                                        <img src="img/Bife-Logo.png" alt="BIFE Logo" class="me-2"
+                                            style="width: 25px; height: 25px;">
+                                        <strong>Bray Institute of Further Education</strong> · June 2020
+                                    </p>
+                                    <p>
+                                        I completed a Full Distinction for QQI Level 5 Computer Science course
+                                        during the 2029-2020 academic year from Bray Institute of Further Education, 
+                                        Showing my good technical skills, a willingness to learn and a passion for Computing.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -215,89 +282,128 @@
         <section id="projects" class="py-5 bg-light">
             <div class="container">
                 <h2 class="fw-bold text-center mb-4">Projects</h2>
-                <div class="row">
-                    <!-- Bike Rental System -->
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title fw-bold">Bike Rental System</h5>
-                                <p class="card-text">
-                                    My final project for my second year, the Bike Rental System, is a responsive,
-                                    user-friendly website
-                                    that allows users to browse, book, subscribe to newsletters, and manage bike
-                                    rentals. Features include
-                                    user registration with Supabase, Google Maps API integration for browsing rental
-                                    locations, and real-time
-                                    updates on bike availability and pricing using MQTT.
-                                </p>
-                                <p>
-                                    <span class="badge bg-info text-dark">CSS (33.7%)</span>
-                                    <span class="badge bg-warning text-dark">JavaScript (31.6%)</span>
-                                    <span class="badge bg-primary">HTML (23.5%)</span>
-                                    <span class="badge bg-dark">Shell (10.8%)</span>
-                                    <span class="badge bg-secondary">Python (0.4%)</span>
-                                </p>
-                                <a href="https://github.com/YourGitHubLink/Bike-Rental-System" target="_blank"
-                                    class="btn btn-primary">View on GitHub</a>
+                <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <!-- Carousel Indicators -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                    </div>
+
+                    <!-- Carousel Items -->
+                    <div class="carousel-inner">
+                        <!-- Bike Rental System -->
+                        <div class="carousel-item active">
+                            <div class="card mx-auto" style="width: 75%;">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Bike Rental System</h5>
+                                    <p class="card-text">
+                                        My final project for my second year, the Bike Rental System, is a responsive,
+                                        user-friendly website
+                                        that allows users to browse, book, subscribe to newsletters, and manage bike
+                                        rentals. Features include
+                                        user registration with Supabase, Google Maps API integration for browsing rental
+                                        locations, and real-time
+                                        updates on bike availability and pricing using MQTT.
+                                    </p>
+                                    <p>
+                                        <span class="badge bg-info text-dark">CSS (33.7%)</span>
+                                        <span class="badge bg-warning text-dark">JavaScript (31.6%)</span>
+                                        <span class="badge bg-primary">HTML (23.5%)</span>
+                                        <span class="badge bg-dark">Shell (10.8%)</span>
+                                        <span class="badge bg-secondary">Python (0.4%)</span>
+                                    </p>
+                                    <a href="https://github.com/YourGitHubLink/Bike-Rental-System" target="_blank"
+                                        class="btn btn-primary">View on GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Java Text-Based RPG -->
+                        <div class="carousel-item">
+                            <div class="card mx-auto" style="width: 75%;">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Java Text-Based RPG</h5>
+                                    <p class="card-text">
+                                        Part of my final project for the Computer Science PLC, this project focuses on a
+                                        text-based
+                                        old-school RPG built entirely using Java. The game emphasizes user interaction
+                                        through text commands
+                                        and features story progression, enemy encounters, and inventory management.
+                                    </p>
+                                    <p>
+                                        <span class="badge bg-warning text-dark">Java (100%)</span>
+                                    </p>
+                                    <a href="https://github.com/YourGitHubLink/Java-Text-Based-RPG" target="_blank"
+                                        class="btn btn-primary">View on GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- First Year Web Development Project -->
+                        <div class="carousel-item">
+                            <div class="card mx-auto" style="width: 75%;">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">First Year Web Development Project</h5>
+                                    <p class="card-text">
+                                        Part of my first-year web development module, this project highlights the
+                                        modules I took during my
+                                        first year. It features an elegant, responsive design using HTML and CSS and
+                                        serves as an introduction
+                                        to web development concepts like semantic structure, styling, and accessibility.
+                                    </p>
+                                    <p>
+                                        <span class="badge bg-info text-dark">CSS (52.6%)</span>
+                                        <span class="badge bg-danger">HTML (47.4%)</span>
+                                    </p>
+                                    <a href="https://github.com/YourGitHubLink/First-Year-Web-Dev-Project"
+                                        target="_blank" class="btn btn-primary">View on GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Gaming Dashboard Overview -->
+                        <div class="carousel-item">
+                            <div class="card mx-auto" style="width: 75%;">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Gaming Dashboard Overview</h5>
+                                    <p class="card-text">
+                                        This project is my final project for the fourth year, a comprehensive gaming
+                                        dashboard for Steam users that combines game optimization,
+                                        game management, community interaction, and analytics. This platform serves as a
+                                        central hub for managing the gaming experience, including game recommendations,
+                                        performance monitoring, price tracking, and community engagement.
+                                    </p>
+                                    <p>
+                                        <span class="badge bg-info text-dark">Node.js</span>
+                                        <span class="badge bg-primary">React.js</span>
+                                        <span class="badge bg-info text-dark">CSS</span>
+                                        <span class="badge bg-danger">HTML</span>
+                                        <span class="badge bg-dark">PowerShell</span>
+                                    </p>
+                                    <a href="https://github.com/YourGitHubLink/First-Year-Web-Dev-Project"
+                                        target="_blank" class="btn btn-primary">View on GitHub</a>
+                                    <span class="badge bg-success">In Development</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Java Text-Based RPG -->
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title fw-bold">Java Text-Based RPG</h5>
-                                <p class="card-text">
-                                    Part of my final project for the Computer Science PLC, this project focuses on a
-                                    text-based
-                                    old-school RPG built entirely using Java. The game emphasizes user interaction
-                                    through text commands
-                                    and features story progression, enemy encounters, and inventory management.
-                                </p>
-                                <p>
-                                    <span class="badge bg-warning text-dark">Java (100%)</span>
-                                </p>
-                                <a href="https://github.com/YourGitHubLink/Java-Text-Based-RPG" target="_blank"
-                                    class="btn btn-primary">View on GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- First Year Web Development Project -->
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title fw-bold">First Year Web Development Project</h5>
-                                <p class="card-text">
-                                    Part of my first-year web development module, this project highlights the modules I
-                                    took during my
-                                    first year. It features an elegant, responsive design using HTML and CSS and serves
-                                    as an introduction
-                                    to web development concepts like semantic structure, styling, and accessibility.
-                                </p>
-                                <p>
-                                    <span class="badge bg-info text-dark">CSS (52.6%)</span>
-                                    <span class="badge bg-danger">HTML (47.4%)</span>
-                                </p>
-                                <a href="https://github.com/YourGitHubLink/First-Year-Web-Dev-Project" target="_blank"
-                                    class="btn btn-primary">View on GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Gaming Dashboard Overview -->
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title fw-bold">Gaming Dashboard Overview</h5>
-                                <p class="card-text">
-                                    This project was my Final project for 4th year, Its a comprehensive gaming dashboard for Steam users that combines game optimization,
-                                    game management, community interaction, and analytics. This platform serves as a
-                                    central hub for managing the gaming experience, including game recommendations,
-                                    performance monitoring, price tracking, and community engagement. This project was still in Development.
-                                </p>
-                                <span class="badge bg-success">In Development</span>
-                            </div>
-                        </div>
-                    </div>
+
+                    <!-- Carousel Controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"
+                            style="filter: invert(100%);"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"
+                            style="filter: invert(100%);"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
         </section>
@@ -442,6 +548,10 @@
         <!-- End of Contact Section -->
     </main>
 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Custom JavaScript -->
     <script src="js/script.js"></script>
