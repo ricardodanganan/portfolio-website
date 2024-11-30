@@ -48,24 +48,25 @@
     <!-- End of Navbar -->
 
     <!-- Hero Section -->
-    <header id="hero" class="d-flex align-items-center justify-content-center flex-column text-center">
-        <div class="container">
-            <!-- Profile Picture -->
-            <img src="img/Profile-logo.jpg" alt="Profile Picture" class="rounded-circle mb-3"
-                style="width: 150px; height: 150px; object-fit: cover; border: 4px solid white;">
-
-            <!-- Name and Title -->
-            <h1 class="fw-bold">Ricardo Danganan Jnr</h1>
-            <p class="text-light mb-3">BSc (Hons) Computing with IT Management | 4th Year Computing Student</p>
-
-            <!-- Buttons -->
-            <div>
-                <a href="https://github.com/ricardodanganan" class="btn btn-outline-light me-2" target="_blank">
-                    <i class="bi bi-github"></i> GitHub
-                </a>
-                <a href="https://www.linkedin.com/in/ricardodanganan/" class="btn btn-outline-light" target="_blank">
-                    <i class="bi bi-linkedin"></i> LinkedIn
-                </a>
+    <header id="hero" class="d-flex align-items-center"
+        style="background: url('./img/Hero-Logo-3.jpg') no-repeat center center; background-size: cover;">
+        <div class="container d-flex justify-content-between align-items-center flex-wrap">
+            <!-- Left Column -->
+            <div class="hero-text">
+                <h3 class="text-light">HELLO THERE, WELCOME TO MY SITE</h3>
+                <h1 class="fw-bold text-light">I’m <span class="highlight">Ricardo Danganan Jnr</span></h1>
+                <p class="sub-title"><span class="highlight-alt">Future IT Professional</span> | 4th Year Student in
+                    Computing & IT Management</p>
+                <div class="hero-buttons">
+                    <!-- GitHub Button -->
+                    <a href="https://github.com/ricardodanganan" target="_blank" class="btn-github">
+                        <i class="bi bi-github"></i> GitHub
+                    </a>
+                    <!-- LinkedIn Button -->
+                    <a href="https://linkedin.com/in/ricardodanganan" target="_blank" class="btn-linkedin">
+                        <i class="bi bi-linkedin"></i> LinkedIn
+                    </a>
+                </div>
             </div>
         </div>
     </header>
@@ -73,26 +74,33 @@
 
     <!-- Main Content Placeholder -->
     <main class="container my-5">
+
         <!-- About Me Section -->
-        <section id="about" class="py-5 bg-light">
+        <section id="about" class="py-5">
             <div class="container d-flex align-items-center">
-              <div>
-                <h2 class="fw-bold">About Me</h2>
-                <p>
-                  I'm a motivated computing student with a diverse skill set in web design,
-                  database management, scripting, and networking. I thrive on continuous
-                  learning in the ever-evolving ICT landscape. My strengths lie in teamwork,
-                  communication, and willingness to learn. I'm eager to contribute and grow
-                  in a professional environment.
-                </p>
-              </div>
-              <img
-                src="img/Logo.jpg"
-                alt="Profile Banner"
-                class="img-fluid"
-              />
+                <div class="about-text">
+                    <h2 class="fw-bold text-primary">About Me</h2>
+                    <p>
+                        I am a passionate and driven computing student specializing in web design, database
+                        management, scripting, cloud computing, and networking. My commitment to continuous learning
+                        fuels my
+                        ability to adapt in the ever-evolving ICT landscape. With strong teamwork, communication skills,
+                        and
+                        a willingness to learn, I aim to contribute effectively to professional environments while
+                        growing as
+                        a developer.
+                    </p>
+                    <p>
+                        Beyond academics, I embrace a disciplined and active lifestyle. Whether it's playing video games
+                        to
+                        fuel creativity or staying committed to fitness through regular gym workouts, boxing, and
+                        jogging, I
+                        demonstrate dedication, perseverance, and balance in all aspects of life.
+                    </p>
+                </div>
+                <img src="img/Profile-logo.jpg" alt="Profile Picture" class="about-img">
             </div>
-          </section>          
+        </section>
         <!-- End of About Me Section -->
 
         <!-- Skills Section -->
@@ -101,19 +109,19 @@
                 <h2 class="fw-bold text-center mb-4">Skills</h2>
                 <div class="row text-center">
                     <div class="col-md-4">
-                        <div class="p-3 border rounded bg-light">
+                        <div class="skill-card">
                             <h5 class="fw-bold">Web Design</h5>
                             <p>HTML5, CSS, JavaScript, Bootstrap</p>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="p-3 border rounded bg-light">
+                        <div class="skill-card">
                             <h5 class="fw-bold">Cloud Security & Scripting</h5>
                             <p>Bash, PowerShell, Hypervisors & VMs, Cybersecurity</p>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="p-3 border rounded bg-light">
+                        <div class="skill-card">
                             <h5 class="fw-bold">Database Management & Networking</h5>
                             <p>SQL, MongoDB, Cisco Networking</p>
                         </div>
@@ -140,8 +148,8 @@
                             data-bs-parent="#educationAccordion">
                             <div class="accordion-body">
                                 <p class="mb-1">
-                                    <img src="img/technological_university_dublin_logo.jpg" alt="TU Dublin Logo" class="me-2"
-                                        style="width: 25px; height: 25px;">
+                                    <img src="img/technological_university_dublin_logo.jpg" alt="TU Dublin Logo"
+                                        class="me-2" style="width: 25px; height: 25px;">
                                     <strong>Technological University Dublin · June 2024</strong>
                                 </p>
                                 <ul>
@@ -168,8 +176,8 @@
                             data-bs-parent="#educationAccordion">
                             <div class="accordion-body">
                                 <p class="mb-1">
-                                    <img src="img/technological_university_dublin_logo.jpg" alt="TU Dublin Logo" class="me-2"
-                                        style="width: 25px; height: 25px;">
+                                    <img src="img/technological_university_dublin_logo.jpg" alt="TU Dublin Logo"
+                                        class="me-2" style="width: 25px; height: 25px;">
                                     <strong>Technological University Dublin · June 2023</strong>
                                 </p>
                                 <ul>
@@ -201,8 +209,8 @@
                             data-bs-parent="#educationAccordion">
                             <div class="accordion-body">
                                 <p class="mb-1">
-                                    <img src="img/technological_university_dublin_logo.jpg" alt="TU Dublin Logo" class="me-2"
-                                        style="width: 25px; height: 25px;">
+                                    <img src="img/technological_university_dublin_logo.jpg" alt="TU Dublin Logo"
+                                        class="me-2" style="width: 25px; height: 25px;">
                                     <strong>Technological University Dublin · June 2022</strong>
                                 </p>
                                 <ul>
@@ -241,14 +249,17 @@
                                         Amazon Web Services (AWS)
                                     </p>
                                     <p class="mb-1">
-                                        <img src="img/technological_university_dublin_logo.jpg" alt="TU Dublin Logo" class="me-2"
-                                            style="width: 25px; height: 25px;">
+                                        <img src="img/technological_university_dublin_logo.jpg" alt="TU Dublin Logo"
+                                            class="me-2" style="width: 25px; height: 25px;">
                                         <strong>Technological University Dublin · Oct 2024</strong>
                                     </p>
                                     <p>
-                                        Recognized for an innovative wayfinding solution to enable better navigation to healthcare 
-                                        appointments in the community, awarded "Best Future Solution" Worked in a team to build an 
-                                        easy to use application that assists patients with finding health care facilities 
+                                        Recognized for an innovative wayfinding solution to enable better navigation to
+                                        healthcare
+                                        appointments in the community, awarded "Best Future Solution" Worked in a team
+                                        to build an
+                                        easy to use application that assists patients with finding health care
+                                        facilities
                                         and scheduling appointments.
                                     </p>
                                 </div>
@@ -264,8 +275,9 @@
                                         <strong>Bray Institute of Further Education · June 2021</strong>
                                     </p>
                                     <p>
-                                        Recognized for outstanding performance in the QQI Level 6 in Computer Networks,  
-                                        Showing my good technical skills, a willingness to learn and a passion for Computing.
+                                        Recognized for outstanding performance in the QQI Level 6 in Computer Networks,
+                                        Showing my good technical skills, a willingness to learn and a passion for
+                                        Computing.
                                     </p>
                                 </div>
                                 <!-- Full Distinction - QQI Level 5 Computer Science -->
@@ -280,8 +292,9 @@
                                         <strong>Bray Institute of Further Education · June 2020</strong>
                                     </p>
                                     <p>
-                                        Recognized for outstanding performance in the QQI Level 5 Computer Science,  
-                                        Showing my good technical skills, a willingness to learn and a passion for Computing.
+                                        Recognized for outstanding performance in the QQI Level 5 Computer Science,
+                                        Showing my good technical skills, a willingness to learn and a passion for
+                                        Computing.
                                     </p>
                                 </div>
                             </div>

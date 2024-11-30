@@ -11,18 +11,21 @@ main {
 /* Start of Navbar CSS */
 .navbar {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    z-index: 10; /* Ensure it stays on top */
+    z-index: 10;
+    /* Ensure it stays on top */
 }
 
 .navbar-nav .nav-link {
     font-size: 1rem;
     margin-left: 15px;
-    color: white !important; /* Ensure text is white */
+    color: white !important;
+    /* Ensure text is white */
     transition: color 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #007bff !important; /* Change color on hover */
+    color: #007bff !important;
+    /* Change color on hover */
 }
 
 .navbar-brand {
@@ -37,52 +40,103 @@ main {
 }
 /* End of Navbar CSS */
 
-/* Start of Hero Section */
+/* Hero Section */
 #hero {
-    background-color: #424242; /* Light gray background */
-    color: white; /* Adjust text color for contrast */
-    padding: 100px 0;
-    min-height: 90vh;
+    height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 50px 20px;
+    position: relative;
+    color: white;
+    background: url('./img/Hero-Logo-3.jpg') no-repeat center center;
+    background-size: cover;
 }
 
-#hero img.rounded-circle {
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    border: 4px solid white;
+/* Left Column - Text Styling */
+.hero-text {
+    flex: 1;
+    max-width: 50%;
 }
 
-#hero h1 {
+.hero-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ddd;
+}
+
+.hero-text h1 {
     font-size: 3rem;
     margin-bottom: 10px;
 }
 
-#hero p {
+.hero-text .highlight {
+    color: #1e90ff; /* Blue Accent for Name */
+}
+
+.hero-text .highlight-alt {
+    color: #00aaff; /* Subtle Blue for Subheading */
+}
+
+.hero-text .sub-title {
     font-size: 1.2rem;
     margin-bottom: 20px;
+    color: #aaa; /* Softer tone for secondary text */
 }
 
-#hero .btn {
-    margin: 0 10px;
-    border-color: white;
+/* GitHub Button Style */
+.btn-github {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
     color: white;
-    transition: all 0.3s ease-in-out;
+    background-color: #333; /* GitHub's signature black */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-#hero .btn:hover {
-    background-color: white;
-    color: #007bff;
+.btn-github i {
+    margin-right: 8px; /* Space between icon and text */
+    font-size: 1.2rem;
 }
 
-#hero .container {
-    max-width: 800px; /* Center content with reasonable width */
+.btn-github:hover {
+    transform: scale(1.1);
+    background-color: #444; /* Slightly lighter on hover */
 }
 
-#hero img[alt="Profile Picture"] {
-    margin-bottom: 20px; /* Add space below the profile image */
+/* LinkedIn Button Style */
+.btn-linkedin {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #0077b5; /* LinkedIn's signature blue */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin-left: 10px; /* Spacing between buttons */
+}
+
+.btn-linkedin i {
+    margin-right: 8px; /* Space between icon and text */
+    font-size: 1.2rem;
+}
+
+.btn-linkedin:hover {
+    transform: scale(1.1);
+    background-color: #005582; /* Slightly darker on hover */
+}
+
+/* Buttons Hover Effect */
+.btn-gradient:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
 }
 /* End of Hero Section */
 
@@ -91,26 +145,74 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
+    gap: 40px; /* Widen the gap between text and image */
+    background-color: #363636; /* Dark background */
+    color: #f5f5f5; /* Light text color for readability */
+    padding: 40px;
+    border-radius: 15px 15px 0px 0px; /* Optional: Adds rounded corners */
+}
+
+.about-text {
+    flex: 1.5; /* Take more space for the text */
+    line-height: 1.8; /* Improve text readability */
+}
+
+.about-text h2 {
+    color: #0077b5; /* Primary blue accent */
+}
+
+.about-text p {
+    line-height: 1.5;
+    color: #d3d3d3; /* Softer white for better contrast */
+}
+
+.about-img {
+    flex: 1; /* Take less space for the image */
+    max-width: 20%; /* Increase image size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Circular image */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6); /* Subtle shadow for depth */
+    border: 4px solid #ffffff; /* Blue border to match the theme */
+    margin: 0; /* Remove auto-centering */
+}
+/* End of About Me Section */
+
+/* Skills Section */
+#skills {
+    background-color: #363636; /* Matches the dark theme */
+    padding: 50px 0;
+    color: white;
   }
   
-  #about img {
-    height: 100%; /* Adjust the height to match the text container */
-    max-height: 200px; /* Limit the maximum height to ensure responsiveness */
-    object-fit: cover; /* Ensure the image doesn't distort */
-    border-radius: 8px; /* Optional: Adds rounded corners */
+  #skills h2 {
+    color: #1e90ff; /* Blue theme for the heading */
+    margin-bottom: 20px;
   }
-/* End of About Me Section */  
-
-/* Start of Skills Section */
-#skills .p-3 {
-    transition: transform 0.3s ease-in-out;
-}
-
-#skills .p-3:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-}
+  
+  /* Skill Cards */
+  .skill-card {
+    background-color: #1c1c1c; /* Dark card background */
+    border: 1px solid #444; /* Subtle border for the card */
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .skill-card:hover {
+    transform: scale(1.05); /* Slight scaling on hover */
+    box-shadow: 0 4px 20px rgba(30, 144, 255, 0.3); /* Glowing shadow */
+  }
+  
+  .skill-card h5 {
+    font-size: 1.2rem;
+    color: #1e90ff; /* Matches the hero section accent */
+    margin-bottom: 10px;
+  }
+  
+  .skill-card p {
+    font-size: 1rem;
+    color: #ddd; /* Softer text color for descriptions */
+  }
 /* End of Skills Section */
 
 /* Start of Projects Section */
@@ -122,6 +224,7 @@ main {
     transform: scale(1.05);
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 }
+
 /* End of Projects Section */
 
 /* Start of Contact Section */
@@ -140,6 +243,7 @@ form .btn:hover {
     background-color: #0056b3;
     color: white;
 }
+
 /* End of Contact Section */
 
 /* Start of Work and Education Section */
@@ -175,7 +279,8 @@ form .btn:hover {
     top: 0;
     width: 16px;
     height: 16px;
-    background-color: transparent; /* Make dot invisible if unnecessary */
+    background-color: transparent;
+    /* Make dot invisible if unnecessary */
     border-radius: 50%;
     border: 2px solid white;
 }
@@ -185,5 +290,5 @@ form .btn:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease;
 }
-/* End of Work and Education Section */
 
+/* End of Work and Education Section */
