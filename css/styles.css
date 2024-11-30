@@ -359,10 +359,15 @@ main {
     right: 10px; /* Adjust for right position */
 }
 
-
 /* End of Projects Section */
 
 /* Start of Work and Education Section */
+#education-experience {
+    background-color: #2C2C2C; /* Dark background */
+    padding: 50px 0;
+    color: rgb(255, 255, 255);
+}
+
 .timeline {
     border-left: 2px solid #007bff;
     padding-left: 20px;
@@ -398,7 +403,7 @@ main {
     background-color: transparent;
     /* Make dot invisible if unnecessary */
     border-radius: 50%;
-    border: 2px solid white;
+    
 }
 
 /* Adjust hover effects for logos */
@@ -406,23 +411,4 @@ main {
     transform: scale(1.1);
     transition: transform 0.3s ease;
 }
-
 /* End of Work and Education Section */
-
-/* Start of Contact Section */
-form {
-    background: #f8f9fa;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-form .btn {
-    transition: background-color 0.3s ease-in-out;
-}
-
-form .btn:hover {
-    background-color: #0056b3;
-    color: white;
-}
-/* End of Contact Section */
