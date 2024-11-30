@@ -330,11 +330,36 @@ main {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* change the carousel control icon colour to blue */
+/* Remove default Bootstrap arrows */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: #007bff;
+    display: none; /* Hide the default arrows */
 }
+
+/* Custom arrow styles */
+.custom-prev img,
+.custom-next img {
+    width: 30px; /* Adjust the size as needed */
+    height: 30px;
+    cursor: pointer;
+}
+
+.custom-prev img:hover,
+.custom-next img:hover {
+    transform: scale(1.2); /* Add hover effect for scaling */
+    transition: transform 0.3s ease;
+}
+
+/* Position the arrows */
+.custom-prev {
+    left: 10px; /* Adjust for left position */
+}
+
+.custom-next {
+    right: 10px; /* Adjust for right position */
+}
+
+
 /* End of Projects Section */
 
 /* Start of Work and Education Section */
