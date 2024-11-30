@@ -1,0 +1,179 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Start of Navbar CSS */
+.navbar {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10; /* Ensure it stays on top */
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    margin-left: 15px;
+    color: white !important; /* Ensure text is white */
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff !important; /* Change color on hover */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: white !important;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #007bff !important;
+}
+/* End of Navbar CSS */
+
+/* Start of Hero Section */
+#hero {
+    background: linear-gradient(to right, #007bff, #0056b3);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#hero img.rounded-circle {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border: 4px solid white;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+#hero .btn {
+    margin: 0 10px;
+    border-color: white;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+#hero .btn:hover {
+    background-color: white;
+    color: #007bff;
+}
+
+#hero .container {
+    max-width: 800px; /* Center content with reasonable width */
+}
+
+#hero img[alt="Profile Picture"] {
+    margin-bottom: 20px; /* Add space below the profile image */
+}
+/* End of Hero Section */
+
+/* Start of About Me Section */
+#about img {
+    max-width: 100%;
+    border: 5px solid #007bff;
+}
+/* End of About Me Section */
+
+/* Start of Skills Section */
+#skills .p-3 {
+    transition: transform 0.3s ease-in-out;
+}
+
+#skills .p-3:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+/* End of Skills Section */
+
+/* Start of Projects Section */
+.card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+/* End of Projects Section */
+
+/* Start of Contact Section */
+form {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form .btn {
+    transition: background-color 0.3s ease-in-out;
+}
+
+form .btn:hover {
+    background-color: #0056b3;
+    color: white;
+}
+/* End of Contact Section */
+
+/* Start of Work and Education Section */
+.timeline {
+    border-left: 2px solid #007bff;
+    padding-left: 20px;
+    position: relative;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.timeline-item img {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.timeline-item .timeline-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -9px;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    background-color: transparent; /* Make dot invisible if unnecessary */
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+/* Adjust hover effects for logos */
+.timeline-item img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+/* End of Work and Education Section */
+
