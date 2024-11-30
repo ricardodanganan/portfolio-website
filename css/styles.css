@@ -5,7 +5,16 @@ body {
 }
 
 main {
-    padding: 20px;
+    padding: 0px;
+}
+
+/* Line Between Sections */
+.section-divider {
+    width: 90%; /* Adjust width to suit the design */
+    height: 2px; /* Thickness of the line */
+    background: linear-gradient(to right, #0077b5, #1e90ff); /* Blue gradient line */
+    margin: 20px auto; /* Center the line with spacing */
+    border: none;
 }
 
 /* Start of Navbar CSS */
@@ -146,10 +155,10 @@ main {
     align-items: center;
     justify-content: space-between;
     gap: 40px; /* Widen the gap between text and image */
-    background-color: #363636; /* Dark background */
+    background-color: #2C2C2C; /* Dark background */
     color: #f5f5f5; /* Light text color for readability */
     padding: 40px;
-    border-radius: 15px 15px 0px 0px; /* Optional: Adds rounded corners */
+    border-radius: 0px 0px 0px 0px; /* Optional: Adds rounded corners */
 }
 
 .about-text {
@@ -172,50 +181,146 @@ main {
     height: auto; /* Maintain aspect ratio */
     border-radius: 50%; /* Circular image */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6); /* Subtle shadow for depth */
-    border: 4px solid #ffffff; /* Blue border to match the theme */
+    border: 4px solid #000000; /* Blue border to match the theme */
     margin: 0; /* Remove auto-centering */
 }
 /* End of About Me Section */
 
 /* Skills Section */
 #skills {
-    background-color: #363636; /* Matches the dark theme */
+    background-color: #2C2C2C; /* Matches the dark theme */
     padding: 50px 0;
     color: white;
-  }
-  
-  #skills h2 {
+}
+
+#skills h2 {
     color: #1e90ff; /* Blue theme for the heading */
     margin-bottom: 20px;
-  }
-  
-  /* Skill Cards */
-  .skill-card {
-    background-color: #1c1c1c; /* Dark card background */
+}
+
+/* Skill Cards */
+.skill-card {
+    background-color: #424242; /* Dark card background */
     border: 1px solid #444; /* Subtle border for the card */
     border-radius: 10px;
     padding: 20px;
     transition: transform 0.3s, box-shadow 0.3s;
-  }
-  
-  .skill-card:hover {
+}
+
+.skill-card:hover {
     transform: scale(1.05); /* Slight scaling on hover */
     box-shadow: 0 4px 20px rgba(30, 144, 255, 0.3); /* Glowing shadow */
-  }
-  
-  .skill-card h5 {
+}
+
+.skill-card h5 {
     font-size: 1.2rem;
     color: #1e90ff; /* Matches the hero section accent */
     margin-bottom: 10px;
-  }
-  
-  .skill-card p {
+}
+
+.skill-card p {
     font-size: 1rem;
     color: #ddd; /* Softer text color for descriptions */
-  }
+}
 /* End of Skills Section */
 
+/* Start of Education Section */
+#education {
+    background-color: #2C2C2C; /* Dark background matching the hero section */
+    padding: 50px 0;
+    color: #f5f5f5; /* Light text for readability */
+}
+
+#education h2 {
+    text-align: center;
+    color: #1e90ff; /* Blue accent for the section heading */
+    font-size: 2rem;
+}
+
+/* Accordion Header Styling */
+.accordion-button {
+    background-color: #252525; /* Dark button background */
+    color: #f5f5f5; /* Light text color */
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+    border-radius: 5px; /* Smooth rounded corners */
+    padding: 10px 15px;
+    box-shadow: none; /* Removes shadow causing spacing issues */
+    margin: 0; /* Ensures no additional space */
+}
+
+.accordion-button:hover {
+    background-color: #535353; /* Blue hover effect */
+    color: white;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #535353; /* Blue for active accordion */
+    color: white;
+    box-shadow: none; /* Removes shadow when expanded */
+    margin: 0; /* Ensures no gap when expanded */
+}
+
+/* Accordion Body Styling */
+.accordion-body {
+    background-color: #2a2a2a; /* Slightly lighter dark background */
+    border: 1px solid #444; /* Border for separation */
+    border-radius: 5px;
+    padding: 20px;
+    color: #d3d3d3; /* Softer white for better readability */
+    margin: 0; /* Removes gap below the header */
+}
+
+/* Fixes for Accordion Collapsed State */
+.accordion-item {
+    border: none; /* Removes default border */
+    margin: 0; /* Removes gaps between accordion items */
+}
+
+.accordion-item + .accordion-item {
+    margin-top: 0; /* Prevents top margin stacking between items */
+}
+
+/* List Styling */
+.accordion-body ul {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.accordion-body ul li {
+    margin-bottom: 5px;
+    list-style-type: disc; /* Adds bullet points */
+    color: #f5f5f5;
+}
+
+/* University Logos */
+.accordion-body img {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    margin-right: 10px;
+    vertical-align: middle; /* Aligns image with text */
+}
+
+/* Honors and Awards Section */
+.accordion-body h5 {
+    color: #1e90ff; /* Blue for titles */
+    margin-top: 20px;
+}
+
+.accordion-body p {
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+/* End of Education Section */
+
 /* Start of Projects Section */
+#projects {
+    background-color: #2C2C2C; /* Dark background */
+    padding: 50px 0;
+    color: white;
+}
 .card {
     transition: transform 0.3s ease-in-out;
 }
@@ -225,26 +330,12 @@ main {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 }
 
+/* change the carousel control icon colour to blue */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #007bff;
+}
 /* End of Projects Section */
-
-/* Start of Contact Section */
-form {
-    background: #f8f9fa;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-form .btn {
-    transition: background-color 0.3s ease-in-out;
-}
-
-form .btn:hover {
-    background-color: #0056b3;
-    color: white;
-}
-
-/* End of Contact Section */
 
 /* Start of Work and Education Section */
 .timeline {
@@ -292,3 +383,21 @@ form .btn:hover {
 }
 
 /* End of Work and Education Section */
+
+/* Start of Contact Section */
+form {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form .btn {
+    transition: background-color 0.3s ease-in-out;
+}
+
+form .btn:hover {
+    background-color: #0056b3;
+    color: white;
+}
+/* End of Contact Section */
