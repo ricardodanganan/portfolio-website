@@ -1,6 +1,7 @@
 /* Global Styles */
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Default font family */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* Default font family */
     line-height: 1.6;
 }
 
@@ -10,18 +11,25 @@ main {
 
 /* Line Between Sections */
 .section-divider {
-    width: 90%; /* Adjust width to suit the design */
-    height: 3px; /* Thickness of the line */
-    background: #0d6efd; /* Blue color for the line */
-    margin: 20px auto; /* Center the line with spacing */
+    width: 90%;
+    /* Adjust width to suit the design */
+    height: 3px;
+    /* Thickness of the line */
+    background: #0d6efd;
+    /* Blue color for the line */
+    margin: 20px auto;
+    /* Center the line with spacing */
     border: none;
 }
+
 /* Navbar Styling */
 .custom-navbar {
-    background-color: #2C2C2C; /* Dark background matching hero section */
+    background-color: #2C2C2C;
+    /* Dark background matching hero section */
     padding: 15px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    z-index: 1000; /* Ensures the navbar stays on top of other content */
+    z-index: 1000;
+    /* Ensures the navbar stays on top of other content */
 }
 
 /* Sticky Position */
@@ -36,7 +44,8 @@ main {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #00c8ff; /* Light blue accent for the logo */
+    color: #00c8ff;
+    /* Light blue accent for the logo */
     font-size: 1.2rem;
 }
 
@@ -54,7 +63,8 @@ main {
 
 .nav-item {
     text-decoration: none;
-    color: #ffffff; /* White text for nav links */
+    color: #ffffff;
+    /* White text for nav links */
     font-weight: bold;
     position: relative;
     padding-bottom: 5px;
@@ -63,7 +73,8 @@ main {
 }
 
 .nav-item:hover {
-    color: #61dafb; /* Light blue hover effect */
+    color: #61dafb;
+    /* Light blue hover effect */
 }
 
 .nav-item::after {
@@ -71,7 +82,8 @@ main {
     display: block;
     width: 0;
     height: 3px;
-    background-color: #61dafb; /* Light blue underline */
+    background-color: #61dafb;
+    /* Light blue underline */
     transition: width 0.3s;
     margin: auto;
 }
@@ -88,7 +100,8 @@ main {
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.5rem; /* Adjust as needed */
+    font-size: 1.5rem;
+    /* Adjust as needed */
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -96,7 +109,129 @@ main {
     background-color: #61dafb;
     color: #20232a;
 }
+
 /* End of Navbar Styling */
+
+/* Modal Styling */
+.modal-content {
+    background-color: #2C2C2C;
+    /* Dark background to match hero section */
+    color: #ffffff;
+    /* Light text for readability */
+    border: none;
+    /* Remove default borders */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    /* Subtle shadow for depth */
+}
+
+.modal-header {
+    border-bottom: 1px solid #444;
+    /* Subtle border for separation */
+    padding: 20px;
+    background-color: #2C2C2C;
+    /* Slightly lighter dark */
+    color: #00c8ff;
+    /* Accent color for header text */
+    font-weight: bold;
+}
+
+.modal-header .btn-close {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.modal-header .btn-close:hover {
+    color: #00c8ff;
+    /* Accent hover effect */
+}
+
+.modal-title {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.modal-title img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.modal-body {
+    padding: 20px;
+    color: #d3d3d3;
+    /* Softer white for readability */
+}
+
+.modal-body .form-label {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.modal-body .form-control {
+    background-color: #2C2C2C;
+    /* Dark background for inputs */
+    color: #ffffff;
+    border: 1px solid #444;
+    border-radius: 5px;
+}
+
+.modal-body .form-control:focus {
+    background-color: #2C2C2C;
+    color: #ffffff;
+    border-color: #00c8ff;
+    /* Highlight border on focus */
+    box-shadow: none;
+}
+
+.modal-body textarea.form-control {
+    resize: none;
+}
+
+.modal-body button[type="submit"] {
+    background-color: #00c8ff;
+    /* Accent color for button */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.modal-body button[type="submit"]:hover {
+    background-color: #0086cc;
+    /* Darker accent on hover */
+}
+
+/* Custom Close Button */
+.custom-close-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem; /* Adjust size as needed */
+    color: #ffffff; /* White for better visibility */
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1055; /* Ensure it's on top of the modal */
+    transition: color 0.3s;
+}
+
+.custom-close-btn:hover {
+    color: #00c8ff; /* Light blue hover effect */
+}
+
+/* Input Hover Effect */
+.modal-body .form-control:hover {
+    border-color: #00c8ff;
+}
+
+/* End of Modal Styling */
 
 /* Hero Section */
 #hero {
@@ -127,17 +262,20 @@ main {
 }
 
 .hero-text .highlight {
-    color: #1e90ff; /* Blue Accent for Name */
+    color: #1e90ff;
+    /* Blue Accent for Name */
 }
 
 .hero-text .highlight-alt {
-    color: #00aaff; /* Subtle Blue for Subheading */
+    color: #00aaff;
+    /* Subtle Blue for Subheading */
 }
 
 .hero-text .sub-title {
     font-size: 1.2rem;
     margin-bottom: 20px;
-    color: #aaa; /* Softer tone for secondary text */
+    color: #aaa;
+    /* Softer tone for secondary text */
 }
 
 /* GitHub Button Style */
@@ -148,7 +286,8 @@ main {
     font-size: 1rem;
     font-weight: bold;
     color: white;
-    background-color: #333; /* GitHub's signature black */
+    background-color: #333;
+    /* GitHub's signature black */
     border: none;
     border-radius: 5px;
     text-decoration: none;
@@ -156,13 +295,15 @@ main {
 }
 
 .btn-github i {
-    margin-right: 8px; /* Space between icon and text */
+    margin-right: 8px;
+    /* Space between icon and text */
     font-size: 1.2rem;
 }
 
 .btn-github:hover {
     transform: scale(1.1);
-    background-color: #444; /* Slightly lighter on hover */
+    background-color: #444;
+    /* Slightly lighter on hover */
 }
 
 /* LinkedIn Button Style */
@@ -173,22 +314,26 @@ main {
     font-size: 1rem;
     font-weight: bold;
     color: white;
-    background-color: #0077b5; /* LinkedIn's signature blue */
+    background-color: #0077b5;
+    /* LinkedIn's signature blue */
     border: none;
     border-radius: 5px;
     text-decoration: none;
     transition: transform 0.3s ease, background-color 0.3s ease;
-    margin-left: 10px; /* Spacing between buttons */
+    margin-left: 10px;
+    /* Spacing between buttons */
 }
 
 .btn-linkedin i {
-    margin-right: 8px; /* Space between icon and text */
+    margin-right: 8px;
+    /* Space between icon and text */
     font-size: 1.2rem;
 }
 
 .btn-linkedin:hover {
     transform: scale(1.1);
-    background-color: #005582; /* Slightly darker on hover */
+    background-color: #005582;
+    /* Slightly darker on hover */
 }
 
 /* Buttons Hover Effect */
@@ -196,6 +341,7 @@ main {
     transform: scale(1.1);
     filter: brightness(1.2);
 }
+
 /* End of Hero Section */
 
 /* About Me Section */
@@ -203,132 +349,176 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 40px; /* Widen the gap between text and image */
-    background-color: #2C2C2C; /* Dark background */
-    color: #f5f5f5; /* Light text color for readability */
+    gap: 40px;
+    /* Widen the gap between text and image */
+    background-color: #2C2C2C;
+    /* Dark background */
+    color: #f5f5f5;
+    /* Light text color for readability */
     padding: 40px;
-    border-radius: 0px 0px 0px 0px; /* Optional: Adds rounded corners */
+    border-radius: 0px 0px 0px 0px;
+    /* Optional: Adds rounded corners */
 }
 
 .about-text {
-    flex: 1.5; /* Take more space for the text */
-    line-height: 1.8; /* Improve text readability */
+    flex: 1.5;
+    /* Take more space for the text */
+    line-height: 1.8;
+    /* Improve text readability */
 }
 
 .about-text h2 {
-    color: #0077b5; /* Primary blue accent */
+    color: #0077b5;
+    /* Primary blue accent */
 }
 
 .about-text p {
     line-height: 1.5;
-    color: #d3d3d3; /* Softer white for better contrast */
+    color: #d3d3d3;
+    /* Softer white for better contrast */
 }
 
 .about-img {
-    flex: 1; /* Take less space for the image */
-    max-width: 20%; /* Increase image size */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 50%; /* Circular image */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6); /* Subtle shadow for depth */
-    border: 4px solid #000000; /* Blue border to match the theme */
-    margin: 0; /* Remove auto-centering */
+    flex: 1;
+    /* Take less space for the image */
+    max-width: 20%;
+    /* Increase image size */
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 50%;
+    /* Circular image */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+    /* Subtle shadow for depth */
+    border: 4px solid #000000;
+    /* Blue border to match the theme */
+    margin: 0;
+    /* Remove auto-centering */
 }
+
 /* End of About Me Section */
 
 /* Skills Section */
 #skills {
-    background-color: #2C2C2C; /* Matches the dark theme */
+    background-color: #2C2C2C;
+    /* Matches the dark theme */
     padding: 50px 0;
     color: white;
 }
 
 #skills h2 {
-    color: #1e90ff; /* Blue theme for the heading */
+    color: #1e90ff;
+    /* Blue theme for the heading */
     margin-bottom: 20px;
 }
 
 /* Skill Cards */
 .skill-card {
-    background-color: #424242; /* Dark card background */
-    border: 1px solid #444; /* Subtle border for the card */
+    background-color: #424242;
+    /* Dark card background */
+    border: 1px solid #444;
+    /* Subtle border for the card */
     border-radius: 10px;
     padding: 20px;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .skill-card:hover {
-    transform: scale(1.05); /* Slight scaling on hover */
-    box-shadow: 0 4px 20px rgba(30, 144, 255, 0.3); /* Glowing shadow */
+    transform: scale(1.05);
+    /* Slight scaling on hover */
+    box-shadow: 0 4px 20px rgba(30, 144, 255, 0.3);
+    /* Glowing shadow */
 }
 
 .skill-card h5 {
     font-size: 1.2rem;
-    color: #1e90ff; /* Matches the hero section accent */
+    color: #1e90ff;
+    /* Matches the hero section accent */
     margin-bottom: 10px;
 }
 
 .skill-card p {
     font-size: 1rem;
-    color: #ddd; /* Softer text color for descriptions */
+    color: #ddd;
+    /* Softer text color for descriptions */
 }
+
 /* End of Skills Section */
 
 /* Start of Education Section */
 #education {
-    background-color: #2C2C2C; /* Dark background matching the hero section */
+    background-color: #2C2C2C;
+    /* Dark background matching the hero section */
     padding: 50px 0;
-    color: #f5f5f5; /* Light text for readability */
+    color: #f5f5f5;
+    /* Light text for readability */
 }
 
 #education h2 {
     text-align: center;
-    color: #1e90ff; /* Blue accent for the section heading */
+    color: #1e90ff;
+    /* Blue accent for the section heading */
     font-size: 2rem;
 }
 
 /* Accordion Header Styling */
 .accordion-button {
-    background-color: #252525; /* Dark button background */
-    color: #f5f5f5; /* Light text color */
+    background-color: #252525;
+    /* Dark button background */
+    color: #f5f5f5;
+    /* Light text color */
     border: none;
     font-weight: bold;
     transition: background-color 0.3s, transform 0.2s;
-    border-radius: 5px; /* Smooth rounded corners */
+    border-radius: 5px;
+    /* Smooth rounded corners */
     padding: 10px 15px;
-    box-shadow: none; /* Removes shadow causing spacing issues */
-    margin: 0; /* Ensures no additional space */
+    box-shadow: none;
+    /* Removes shadow causing spacing issues */
+    margin: 0;
+    /* Ensures no additional space */
 }
 
 .accordion-button:hover {
-    background-color: #535353; /* Blue hover effect */
+    background-color: #535353;
+    /* Blue hover effect */
     color: white;
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: #535353; /* Blue for active accordion */
+    background-color: #535353;
+    /* Blue for active accordion */
     color: white;
-    box-shadow: none; /* Removes shadow when expanded */
-    margin: 0; /* Ensures no gap when expanded */
+    box-shadow: none;
+    /* Removes shadow when expanded */
+    margin: 0;
+    /* Ensures no gap when expanded */
 }
 
 /* Accordion Body Styling */
 .accordion-body {
-    background-color: #2a2a2a; /* Slightly lighter dark background */
-    border: 1px solid #444; /* Border for separation */
+    background-color: #2a2a2a;
+    /* Slightly lighter dark background */
+    border: 1px solid #444;
+    /* Border for separation */
     border-radius: 5px;
     padding: 20px;
-    color: #d3d3d3; /* Softer white for better readability */
-    margin: 0; /* Removes gap below the header */
+    color: #d3d3d3;
+    /* Softer white for better readability */
+    margin: 0;
+    /* Removes gap below the header */
 }
 
 /* Fixes for Accordion Collapsed State */
 .accordion-item {
-    border: none; /* Removes default border */
-    margin: 0; /* Removes gaps between accordion items */
+    border: none;
+    /* Removes default border */
+    margin: 0;
+    /* Removes gaps between accordion items */
 }
 
-.accordion-item + .accordion-item {
-    margin-top: 0; /* Prevents top margin stacking between items */
+.accordion-item+.accordion-item {
+    margin-top: 0;
+    /* Prevents top margin stacking between items */
 }
 
 /* List Styling */
@@ -339,7 +529,8 @@ main {
 
 .accordion-body ul li {
     margin-bottom: 5px;
-    list-style-type: disc; /* Adds bullet points */
+    list-style-type: disc;
+    /* Adds bullet points */
     color: #f5f5f5;
 }
 
@@ -349,12 +540,14 @@ main {
     height: 30px;
     border-radius: 5px;
     margin-right: 10px;
-    vertical-align: middle; /* Aligns image with text */
+    vertical-align: middle;
+    /* Aligns image with text */
 }
 
 /* Honors and Awards Section */
 .accordion-body h5 {
-    color: #1e90ff; /* Blue for titles */
+    color: #1e90ff;
+    /* Blue for titles */
     margin-top: 20px;
 }
 
@@ -362,14 +555,17 @@ main {
     line-height: 1.6;
     font-size: 0.9rem;
 }
+
 /* End of Education Section */
 
 /* Start of Projects Section */
 #projects {
-    background-color: #2C2C2C; /* Dark background */
+    background-color: #2C2C2C;
+    /* Dark background */
     padding: 50px 0;
     color: white;
 }
+
 .card {
     transition: transform 0.3s ease-in-out;
 }
@@ -382,37 +578,43 @@ main {
 /* Remove default Bootstrap arrows */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    display: none; /* Hide the default arrows */
+    display: none;
+    /* Hide the default arrows */
 }
 
 /* Custom arrow styles */
 .custom-prev img,
 .custom-next img {
-    width: 30px; /* Adjust the size as needed */
+    width: 30px;
+    /* Adjust the size as needed */
     height: 30px;
     cursor: pointer;
 }
 
 .custom-prev img:hover,
 .custom-next img:hover {
-    transform: scale(1.2); /* Add hover effect for scaling */
+    transform: scale(1.2);
+    /* Add hover effect for scaling */
     transition: transform 0.3s ease;
 }
 
 /* Position the arrows */
 .custom-prev {
-    left: 10px; /* Adjust for left position */
+    left: 10px;
+    /* Adjust for left position */
 }
 
 .custom-next {
-    right: 10px; /* Adjust for right position */
+    right: 10px;
+    /* Adjust for right position */
 }
 
 /* End of Projects Section */
 
 /* Start of Work and Education Section */
 #education-experience {
-    background-color: #2C2C2C; /* Dark background */
+    background-color: #2C2C2C;
+    /* Dark background */
     padding: 50px 0;
     color: rgb(255, 255, 255);
 }
@@ -452,30 +654,37 @@ main {
     background-color: transparent;
     /* Make dot invisible if unnecessary */
     border-radius: 50%;
-    
+
 }
+
 /* Adjust hover effects for logos */
 .timeline-item img:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease;
 }
+
 /* End of Work and Education Section */
 
 /* Footer Section */
 #footer {
-    background-color: #2C2C2C; /* Dark background matching the hero section */
-    color: #f5f5f5; /* Light text for readability */
-    border-top: 4px solid #007bff; /* Blue accent border */
+    background-color: #2C2C2C;
+    /* Dark background matching the hero section */
+    color: #f5f5f5;
+    /* Light text for readability */
+    border-top: 4px solid #007bff;
+    /* Blue accent border */
 }
 
 #footer p {
     margin: 0;
     font-size: 1rem;
-    color: #d3d3d3; /* Softer white for text */
+    color: #d3d3d3;
+    /* Softer white for text */
 }
 
 #footer .btn {
-    background-color: #007bff; /* Primary blue */
+    background-color: #007bff;
+    /* Primary blue */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -485,7 +694,9 @@ main {
 }
 
 #footer .btn:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #0056b3;
+    /* Darker blue on hover */
     text-decoration: none;
 }
+
 /* End of Footer Section */
