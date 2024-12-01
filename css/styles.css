@@ -212,18 +212,22 @@ main {
 .custom-close-btn {
     background: none;
     border: none;
-    font-size: 1.5rem; /* Adjust size as needed */
-    color: #ffffff; /* White for better visibility */
+    font-size: 1.5rem;
+    /* Adjust size as needed */
+    color: #ffffff;
+    /* White for better visibility */
     position: absolute;
     top: 15px;
     right: 20px;
     cursor: pointer;
-    z-index: 1055; /* Ensure it's on top of the modal */
+    z-index: 1055;
+    /* Ensure it's on top of the modal */
     transition: color 0.3s;
 }
 
 .custom-close-btn:hover {
-    color: #00c8ff; /* Light blue hover effect */
+    color: #00c8ff;
+    /* Light blue hover effect */
 }
 
 /* Input Hover Effect */
@@ -700,3 +704,27 @@ main {
 }
 
 /* End of Footer Section */
+
+/* Music Control Styling */
+.music-control {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.music-icon {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s;
+}
+
+.music-control:hover .music-icon {
+    transform: scale(1.2); /* Slight zoom effect on hover */
+}
+
+
+/* End of Music Control Styling */
