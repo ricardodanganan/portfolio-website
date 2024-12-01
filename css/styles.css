@@ -120,7 +120,7 @@ main {
 .navbar-links {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 30px;
     flex: 1;
 }
 
@@ -131,7 +131,7 @@ main {
     font-weight: bold;
     position: relative;
     padding-bottom: 5px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     transition: color 0.3s, border-bottom 0.3s;
 }
 
@@ -524,6 +524,7 @@ main {
     /* Subtle border for the card */
     border-radius: 10px;
     padding: 20px;
+    height: 100%;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -673,7 +674,11 @@ main {
 
 .card {
     transition: transform 0.3s ease-in-out;
+    width: 400px;
+    height: 260px;
+    /* Set fixed width and height to make each card size static */
 }
+
 
 .card:hover {
     transform: scale(1.05);
@@ -713,7 +718,20 @@ main {
     right: 10px;
     /* Adjust for right position */
 }
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .card {
+        width: 80%;
+        height: auto;
+    }
+}
 
+@media (max-width: 576px) {
+    .card {
+        width: 90%;
+        height: auto;
+    }
+}
 /* End of Projects Section */
 
 /* Start of Work and Education Section */
