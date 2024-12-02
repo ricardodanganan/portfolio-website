@@ -731,7 +731,7 @@ main {
 
 .custom-prev img:hover,
 .custom-next img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     /* Add hover effect for scaling */
     transition: transform 0.3s ease;
 }
