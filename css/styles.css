@@ -703,7 +703,7 @@ main {
 .card {
     transition: transform 0.3s ease-in-out;
     width: 400px;
-    height: 260px;
+    height: 360px;
     /* Set fixed width and height to make each card size static */
 }
 
@@ -746,18 +746,37 @@ main {
     right: 10px;
     /* Adjust for right position */
 }
+
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .card {
-        width: 80%;
-        height: auto;
+        height: 475px;
+        /* Allow card height to adjust dynamically for smaller screens */
+        width: 90%;
+        /* Make the width flexible to fit the viewport */
+        margin: auto; /* Center the card horizontally */
+    }
+
+    .custom-prev,
+    .custom-next {
+        top: 50%;
+        transform: translateY(-50%);
+        /* Ensure the arrows are vertically centered */
     }
 }
 
 @media (max-width: 576px) {
     .card {
+        height: 525px; /* Allow the card to adjust its height */
         width: 90%;
-        height: auto;
+        /* Make the card take almost the full width of smaller screens */
+    }
+
+    /* Adjust arrow size for smaller screens */
+    .custom-prev img,
+    .custom-next img {
+        width: 25px;
+        height: 25px;
     }
 }
 /* End of Projects Section */
