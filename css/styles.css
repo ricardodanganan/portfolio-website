@@ -759,8 +759,8 @@ main {
     /* Adjust arrow size for smaller screens */
     .custom-prev img,
     .custom-next img {
-        width: 20px;
-        height: 20px;
+        width: 18px;
+        height: 18px;
     }
 }
 
@@ -774,8 +774,8 @@ main {
     /* Adjust arrow size for smaller screens */
     .custom-prev img,
     .custom-next img {
-        width: 20px;
-        height: 20px;
+        width: 18px;
+        height: 18px;
     }
 }
 /* End of Projects Section */
