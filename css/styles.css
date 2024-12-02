@@ -750,7 +750,7 @@ main {
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .card {
-        height: 550px;
+        height: 575px;
         /* Allow card height to adjust dynamically for smaller screens */
         width: 100%;
         /* Make the width flexible to fit the viewport */
@@ -766,7 +766,7 @@ main {
 
 @media (max-width: 576px) {
     .card {
-        height: 600px; /* Allow the card to adjust its height */
+        height: 625px; /* Allow the card to adjust its height */
         width: 100%;
         /* Make the card take almost the full width of smaller screens */
     }
