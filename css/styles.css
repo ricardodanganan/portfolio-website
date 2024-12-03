@@ -690,6 +690,23 @@ main {
     font-size: 0.9rem;
 }
 
+/* Grade Colour Styling */
+.grade-a {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .grade-b {
+    color: blue;
+    font-weight: bold;
+  }
+  
+  .grade-b-plus {
+    color: orange;
+    font-weight: bold;
+  }
+  
+
 /* End of Education Section */
 
 /* Start of Projects Section */
