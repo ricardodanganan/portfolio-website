@@ -759,8 +759,8 @@ main {
     /* Adjust arrow size for smaller screens */
     .custom-prev img,
     .custom-next img {
-        width: 18px;
-        height: 18px;
+        width: 20px;
+        height: 20px;
     }
 }
 
