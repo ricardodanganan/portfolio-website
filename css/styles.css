@@ -9,15 +9,40 @@ main {
     padding: 0px;
 }
 
+
+/* Parallax Separator */
+.parallax-separator {
+    background-image: url('../img/wallpaper-1.jpg'); 
+    height: 150px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+/* Optional: Overlay to darken or lighten the parallax section */
+.parallax-separator::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Add a dark overlay (adjust opacity as needed) */
+    z-index: 2;
+}
+
 /* Line Between Sections */
 .section-divider {
     width: 90%;
     /* Adjust width to suit the design */
-    height: 3px;
+    height: 1px;
     /* Thickness of the line */
     background: #0d6efd;
     /* Blue color for the line */
-    margin: 20px auto;
+    margin: 40px auto;
     /* Center the line with spacing */
     border: none;
 }
@@ -26,7 +51,7 @@ main {
 .custom-navbar {
     background-color: #2C2C2C;
     /* Dark background matching hero section */
-    padding: 15px 20px;
+    padding: 5px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     /* Ensures the navbar stays on top of other content */
