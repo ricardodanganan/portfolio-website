@@ -1,0 +1,138 @@
+/* General Hero Splash Section */
+#hero {
+    height: 100vh; /* Adjusted below for smaller screens */
+    display: flex;
+    align-items: center;
+    color: white;
+    background: url('./img/Hero-Logo-3.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+/* Left Column - Text Styling */
+.hero-text {
+    flex: 1;
+    max-width: 50%;
+}
+
+.hero-text h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #ddd;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem; /* Responsive font size below */
+    margin-bottom: 10px;
+}
+
+.hero-text .highlight {
+    color: #1e90ff;
+}
+
+.hero-text .highlight-alt {
+    color: #00aaff;
+}
+
+.hero-text .sub-title {
+    font-size: 1.2rem; /* Responsive font size below */
+    margin-bottom: 20px;
+    color: #aaa;
+}
+
+/* Button Styles */
+.btn-github, .btn-linkedin {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin-bottom: 10px; /* To add space when stacking */
+}
+
+/* GitHub Button Specifics */
+.btn-github {
+    background-color: #333;
+}
+
+.btn-github i {
+    margin-right: 8px;
+    font-size: 1.2rem;
+}
+
+.btn-github:hover {
+    transform: scale(1.1);
+    background-color: #444;
+}
+
+/* LinkedIn Button Specifics */
+.btn-linkedin {
+    background-color: #0077b5;
+    margin-left: 10px; /* Spacing between buttons in desktop view */
+}
+
+.btn-linkedin i {
+    margin-right: 8px;
+    font-size: 1.2rem;
+}
+
+.btn-linkedin:hover {
+    transform: scale(1.1);
+    background-color: #005582;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    #hero {
+        height: auto; /* Allow the height to adapt */
+        padding: 50px 20px; /* Add padding for better spacing */
+    }
+
+    .hero-text {
+        max-width: 100%; /* Allow the text to use full width */
+        text-align: center; /* Center align for mobile */
+    }
+
+    .hero-text h1 {
+        font-size: 2rem; /* Smaller font size */
+    }
+
+    .hero-text h3 {
+        font-size: 1rem;
+    }
+
+    .hero-text .sub-title {
+        font-size: 1rem;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center; /* Center align buttons */
+    }
+
+    .btn-linkedin {
+        margin-left: 0; /* Remove margin between buttons */
+        margin-top: 10px; /* Add spacing between stacked buttons */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-text .sub-title {
+        font-size: 0.9rem;
+    }
+
+    .btn-github, .btn-linkedin {
+        font-size: 0.9rem; /* Smaller button text */
+        padding: 8px 15px; /* Reduce padding */
+    }
+}
+/* End of Hero Section */

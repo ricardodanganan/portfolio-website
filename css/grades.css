@@ -1,0 +1,128 @@
+/* Start of Education Section */
+#education {
+    background-color: #2C2C2C;
+    /* Dark background matching the hero section */
+    padding: 50px 0;
+    color: #f5f5f5;
+    /* Light text for readability */
+}
+
+#education h2 {
+    text-align: center;
+    color: #1e90ff;
+    /* Blue accent for the section heading */
+    font-size: 2rem;
+}
+
+/* Accordion Header Styling */
+.accordion-button {
+    background-color: #ffffff;
+    /* Dark button background */
+    color: #000000;
+    /* Light text color */
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+    border-radius: 0px;
+    /* Smooth rounded corners */
+    padding: 10px 15px;
+    box-shadow: none;
+    /* Removes shadow causing spacing issues */
+    margin: 0;
+    /* Ensures no additional space */
+}
+
+.accordion-button:hover {
+    background-color: #535353;
+    /* Blue hover effect */
+    color: white;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #535353;
+    /* Blue for active accordion */
+    color: white;
+    box-shadow: none;
+    /* Removes shadow when expanded */
+    margin: 0;
+    /* Ensures no gap when expanded */
+}
+
+/* Accordion Body Styling */
+.accordion-body {
+    background-color: #2a2a2a;
+    /* Slightly lighter dark background */
+    border: 1px solid #444;
+    /* Border for separation */
+    border-radius: 0px;
+    padding: 20px;
+    color: #d3d3d3;
+    /* Softer white for better readability */
+    margin: 0;
+    /* Removes gap below the header */
+}
+
+/* Fixes for Accordion Collapsed State */
+.accordion-item {
+    border: none;
+    /* Removes default border */
+    margin: 0;
+    /* Removes gaps between accordion items */
+}
+
+.accordion-item+.accordion-item {
+    margin-top: 0;
+    /* Prevents top margin stacking between items */
+}
+
+/* List Styling */
+.accordion-body ul {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.accordion-body ul li {
+    margin-bottom: 5px;
+    list-style-type: disc;
+    /* Adds bullet points */
+    color: #f5f5f5;
+}
+
+/* University Logos */
+.accordion-body img {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    margin-right: 10px;
+    vertical-align: middle;
+    /* Aligns image with text */
+}
+
+/* Honors and Awards Section */
+.accordion-body h5 {
+    color: #1e90ff;
+    /* Blue for titles */
+    margin-top: 20px;
+}
+
+.accordion-body p {
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+/* Grade Colour Styling */
+.grade-a {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .grade-b {
+    color: blue;
+    font-weight: bold;
+  }
+  
+  .grade-b-plus {
+    color: orange;
+    font-weight: bold;
+  }
+/* End of Education Section */

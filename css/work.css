@@ -1,0 +1,53 @@
+/* Start of Work and Education Section */
+#education-experience {
+    background-color: #2C2C2C;
+    /* Dark background */
+    padding: 50px 0;
+    color: rgb(255, 255, 255);
+}
+
+.timeline {
+    border-left: 2px solid #007bff;
+    padding-left: 20px;
+    position: relative;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.timeline-item img {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.timeline-item .timeline-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -9px;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+    /* Make dot invisible if unnecessary */
+    border-radius: 50%;
+
+}
+
+/* Adjust hover effects for logos */
+.timeline-item img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* End of Work and Education Section */

@@ -1,0 +1,46 @@
+/* Skills Section */
+#skills {
+    background-color: #2C2C2C;
+    /* Matches the dark theme */
+    padding: 50px 0;
+    color: white;
+}
+
+#skills h2 {
+    color: #1e90ff;
+    /* Blue theme for the heading */
+    margin-bottom: 20px;
+}
+
+/* Skill Cards */
+.skill-card {
+    background-color: #424242;
+    /* Dark card background */
+    border: 1px solid #444;
+    /* Subtle border for the card */
+    border-radius: 10px;
+    padding: 20px;
+    height: 100%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+    /* Slight scaling on hover */
+    box-shadow: 0 4px 20px rgba(30, 144, 255, 0.3);
+    /* Glowing shadow */
+}
+
+.skill-card h5 {
+    font-size: 1.2rem;
+    color: #1e90ff;
+    /* Matches the hero section accent */
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    font-size: 1rem;
+    color: #ddd;
+    /* Softer text color for descriptions */
+}
+/* End of Skills Section */

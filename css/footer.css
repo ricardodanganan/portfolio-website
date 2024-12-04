@@ -1,0 +1,35 @@
+/* Footer Section */
+#footer {
+    background-color: #2C2C2C;
+    /* Dark background matching the hero section */
+    color: #f5f5f5;
+    /* Light text for readability */
+    border-top: 4px solid #007bff;
+    /* Blue accent border */
+}
+
+#footer p {
+    margin: 0;
+    font-size: 1rem;
+    color: #d3d3d3;
+    /* Softer white for text */
+}
+
+#footer .btn {
+    background-color: #007bff;
+    /* Primary blue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#footer .btn:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+    text-decoration: none;
+}
+
+/* End of Footer Section */
