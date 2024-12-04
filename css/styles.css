@@ -25,7 +25,7 @@ main {
 /* Parallax Separator */
 .parallax-separator {
     background-image: url('../img/wallpaper-2.jpg'); 
-    height: 115px; 
+    height: 200px; 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
