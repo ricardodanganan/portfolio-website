@@ -345,6 +345,7 @@
         <!-- End of Education Section -->
 
         <!-- Projects Section -->
+        <!-- Projects Section -->
         <section id="projects" class="py-5">
             <hr class="section-divider"> <!-- Section Divider -->
 
@@ -374,7 +375,10 @@
                                             alt="Bike Rental System">
                                         <div class="card-body text-center">
                                             <h5 class="card-title">Bike Rental System</h5>
-                                            <a href="#" class="btn btn-primary">Show More</a>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                data-bs-target="#projectModal1">
+                                                Show More
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -384,7 +388,10 @@
                                             alt="Java Text-Based RPG">
                                         <div class="card-body text-center">
                                             <h5 class="card-title">Java Text-Based RPG</h5>
-                                            <a href="#" class="btn btn-primary">Show More</a>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                data-bs-target="#projectModal2">
+                                                Show More
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -393,8 +400,11 @@
                                         <img src="img/First-Year-Project.jpg" class="card-img-top"
                                             alt="First Year Web Development Project">
                                         <div class="card-body text-center">
-                                            <h5 class="card-title">First Year Web Design Project</h5>
-                                            <a href="#" class="btn btn-primary">Show More</a>
+                                            <h5 class="card-title">1st-Year Web Design Project</h5>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                data-bs-target="#projectModal3">
+                                                Show More
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -409,17 +419,23 @@
                                             alt="Gaming Dashboard Overview">
                                         <div class="card-body text-center">
                                             <h5 class="card-title">Gaming Dashboard Overview</h5>
-                                            <a href="#" class="btn btn-primary">Show More</a>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                data-bs-target="#projectModal4">
+                                                Show More
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="card">
                                         <img src="img/Game-Performance-Monitor-1.jpg" class="card-img-top"
-                                            alt="Additional Project">
+                                            alt="Performance Optimization">
                                         <div class="card-body text-center">
                                             <h5 class="card-title">Performance Optimization</h5>
-                                            <a href="#" class="btn btn-primary">Show More</a>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                data-bs-target="#projectModal5">
+                                                Show More
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -441,6 +457,180 @@
                 </div>
             </div>
         </section>
+
+        <!-- Modals -->
+        <!-- Modal for Bike Rental System -->
+        <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModal1Label"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="projectModal1Label">Bike Rental System</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="card-text text-dark">
+                            My final project for my second year, the Bike Rental System, is a responsive,
+                            user-friendly website
+                            that allows users to browse, book, subscribe to newsletters, and manage bike
+                            rentals. Features include
+                            user registration with Supabase, Google Maps API integration for browsing rental
+                            locations, and real-time
+                            updates on bike availability and pricing using MQTT.
+                            <br> <br>
+                            Unofrtunately, the project's Supabase database has been expired and cannot be restored.
+                        </p>
+                        <p>
+                            <span class="badge bg-info text-dark">CSS (33.7%)</span>
+                            <span class="badge bg-warning text-dark">JavaScript (31.6%)</span>
+                            <span class="badge bg-primary">HTML (23.5%)</span>
+                            <span class="badge bg-dark">Shell (10.8%)</span>
+                            <span class="badge bg-secondary">Python (0.4%)</span>
+                            <span class="badge bg-warning">Supabase</span>
+                        </p>
+                        <a href="https://github.com/YourGitHubLink/Bike-Rental-System" target="_blank"
+                            class="btn btn-primary">View on GitHub</a>
+                        <a href="https://bike-rental-supabase-mqtt.vercel.app/" target="_blank"
+                            class="btn btn-primary">Link</a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for Java Text-Based RPG -->
+        <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModal2Label"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="projectModal2Label">Java Text-Based RPG</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="card-text text-dark">
+                            Part of my final project for the Computer Science PLC, this project focuses on a
+                            text-based
+                            old-school RPG built entirely using Java. The game emphasizes user interaction
+                            through text commands
+                            and features story progression, enemy encounters, and inventory management.
+                        </p>
+                        <p>
+                            <span class="badge bg-warning text-dark">Java (100%)</span>
+                        </p>
+                        <a href="https://github.com/YourGitHubLink/Java-Text-Based-RPG" target="_blank"
+                            class="btn btn-primary">View on GitHub</a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for First Year Web Design Project -->
+        <div class="modal fade" id="projectModal3" tabindex="-1" aria-labelledby="projectModal3Label"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="projectModal3Label">1st Year Web Design Project</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="card-text text-dark">
+                            Part of my first-year web development module, this project highlights the
+                            modules I took during my
+                            first year. It features an elegant, responsive design using HTML and CSS and
+                            serves as an introduction
+                            to web development concepts like semantic structure, styling, and accessibility.
+                        </p>
+                        <p>
+                            <span class="badge bg-info text-dark">CSS (52.6%)</span>
+                            <span class="badge bg-danger">HTML (47.4%)</span>
+                        </p>
+                        <a href="https://github.com/YourGitHubLink/First-Year-Web-Dev-Project" target="_blank"
+                            class="btn btn-primary">View on GitHub</a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for Gaming Dashboard Overview -->
+        <div class="modal fade" id="projectModal4" tabindex="-1" aria-labelledby="projectModal4Label"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="projectModal4Label">Gaming Dashboard Overview</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="card-text text-dark">
+                            This project, part of my 4th-year portfolio, A comprehensive gaming
+                            dashboard for Steam users that combines game optimization,
+                            game management, community interaction, and analytics. This platform serves as a
+                            central hub for managing the gaming experience, including game recommendations,
+                            performance monitoring, price tracking, and community engagement.
+                            <br> <br>
+                            The Project is still in development and will be updated soon.
+                        </p>
+                        <p>
+                            <span class="badge bg-info text-dark">Node.js</span>
+                            <span class="badge bg-primary">React.js</span>
+                            <span class="badge bg-info text-dark">CSS</span>
+                            <span class="badge bg-danger">HTML</span>
+                            <span class="badge bg-dark">PowerShell</span>
+                            <span class="badge bg-warning">Supabase</span>
+                            <span class="badge bg-success">In Development</span>
+
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for Performance Optimization -->
+        <div class="modal fade" id="projectModal5" tabindex="-1" aria-labelledby="projectModal5Label"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="projectModal5Label">Performance Optimization</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="card-text text-dark">
+                            This project, part of my 4th-year portfolio, focuses on enhancing the gaming experience by 
+                            leveraging system performance data to provide optimization recommendations. By using PowerShell 
+                            scripts, the application collects hardware specifications, including CPU, GPU, RAM, and storage.
+                            <br> <br>
+                            The Project is still in development and will be updated soon.
+                        </p>
+                        <p>
+                            <span class="badge bg-info text-dark">Node.js</span>
+                            <span class="badge bg-primary">React.js</span>
+                            <span class="badge bg-info text-dark">CSS</span>
+                            <span class="badge bg-danger">HTML</span>
+                            <span class="badge bg-dark">PowerShell</span>
+                            <span class="badge bg-warning">Supabase</span>
+                            <span class="badge bg-success">In Development</span>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- End of Projects Section -->
 
         <!-- Education and Work Experience Section -->
