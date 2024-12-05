@@ -4,6 +4,12 @@
     align-items: center;
 }
 
+.navbarMain{
+    background: #2C2C2C;
+    color: #fff;
+    padding: 10px 0;
+}
+
 .flex1 {
     flex: 1;
 }
@@ -35,7 +41,7 @@ button.siteLink {
 
 .blackLink {
     color: #fff;
-    background: #232323;
+    background: #2C2C2C;
     transition: all 300ms linear;
 }
 
@@ -91,7 +97,7 @@ button.siteLink {
 
 a.nav-menu-item:hover {
     margin-left: 2px;
-    border-left: 10px solid black;
+    border-left: 1px solid black;
 }
 
 a.nav-menu-item {
