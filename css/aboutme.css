@@ -131,7 +131,7 @@
 
 /* Hobbies Modal Customization */
 #hobbiesModal .modal-content {
-    background-color: #2C2C2C;
+    background-color: #ffffff;
     color: #d3d3d3;
     border: none;
     border-radius: 8px;
@@ -139,7 +139,7 @@
 }
 
 #hobbiesModal .modal-header {
-    border-bottom: 1px solid #444;
+    border-bottom: 1px solid #ffffff;
     background-color: #2C2C2C;
     color: #00c8ff;
     font-weight: bold;
@@ -157,10 +157,12 @@
 
 #hobbiesModal .modal-body .row .col-4 i {
     margin-bottom: 5px;
+    font-size: 2rem;
+    color: #00c8ff; /* Icon color */
 }
 
 #hobbiesModal .modal-body h6 {
-    color: #f5f5f5;
+    color: #00c8ff;
     margin-top: 5px;
     font-size: 1.1rem;
     font-weight: bold;
@@ -168,10 +170,7 @@
 
 #hobbiesModal .modal-body p {
     font-size: 0.9rem;
-    color: #d3d3d3;
+    color: #000000;
 }
 
-/* Button Close Hover */
-#hobbiesModal .btn-close:hover {
-    color: #00c8ff;
-}
+
