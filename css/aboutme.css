@@ -26,6 +26,7 @@
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
 }
 
+/* Social Icons Section */
 .about-socials {
     display: flex;
     justify-content: center;
@@ -34,15 +35,30 @@
 }
 
 .about-socials a {
-    color: #f5f5f5;
-    font-size: 1.5rem;
-    transition: color 0.3s ease;
+    font-size: 1.5rem; /* Icon size */
+    color: #f5f5f5; /* Default icon color */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
 }
 
+/* Hover Effects for Social Icons */
 .about-socials a:hover {
-    color: #0077b5;
+    transform: scale(1.2); /* Slight enlargement on hover */
 }
 
+/* Specific Brand Colors for Social Icons */
+.about-socials .bi-github:hover {
+    color: #636363; /* GitHub hover color */
+}
+
+.about-socials .bi-linkedin:hover {
+    color: #0077b5; /* LinkedIn hover color */
+}
+
+.about-socials .bi-facebook:hover {
+    color: #0044ff; /* Facebook hover color */
+}
+
+/* About Text Section */
 .about-text {
     max-width: 600px;
 }
@@ -77,31 +93,7 @@
     font-weight: bold;
     border-radius: 5px;
     text-decoration: none;
-    transition: all 0.3s ease;
-}
-
-/* GitHub Button */
-.about-buttons a.github {
-    background-color: #333; /* GitHub theme color */
-    color: #fff; /* White text for GitHub */
-    border: none;
-}
-
-.about-buttons a.github:hover {
-    background-color: #555; /* Darker shade on hover */
-    transform: scale(1.05); /* Slightly enlarge on hover */
-}
-
-/* LinkedIn Button */
-.about-buttons a.linkedin {
-    background-color: #0077b5; /* LinkedIn theme color */
-    color: #fff; /* White text for LinkedIn */
-    border: none;
-}
-
-.about-buttons a.linkedin:hover {
-    background-color: #005582; /* Darker shade on hover */
-    transform: scale(1.05); /* Slightly enlarge on hover */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
 }
 
 /* CV Button */
@@ -114,10 +106,72 @@
 .about-buttons a.cv:hover {
     background-color: #0077b5;
     color: #fff;
-    transform: scale(1.05); /* Slightly enlarge on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
 }
 
-/* Icon Styling */
-.about-buttons i {
-    font-size: 1.2rem; /* Adjust icon size */
+.about-buttons .btn-primary {
+    background-color: #0077b5; /* Default LinkedIn blue */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.about-buttons .btn-primary:hover {
+    background-color: #005582; /* Darker LinkedIn blue for hover */
+    color: #fff; /* Ensure text remains white */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4); /* Add a subtle shadow effect */
+}
+
+
+/* Hobbies Modal Customization */
+#hobbiesModal .modal-content {
+    background-color: #2C2C2C;
+    color: #d3d3d3;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+#hobbiesModal .modal-header {
+    border-bottom: 1px solid #444;
+    background-color: #2C2C2C;
+    color: #00c8ff;
+    font-weight: bold;
+}
+
+#hobbiesModal .modal-title img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+#hobbiesModal .modal-body .row .col-4 {
+    margin-bottom: 20px;
+}
+
+#hobbiesModal .modal-body .row .col-4 i {
+    margin-bottom: 5px;
+}
+
+#hobbiesModal .modal-body h6 {
+    color: #f5f5f5;
+    margin-top: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+#hobbiesModal .modal-body p {
+    font-size: 0.9rem;
+    color: #d3d3d3;
+}
+
+/* Button Close Hover */
+#hobbiesModal .btn-close:hover {
+    color: #00c8ff;
 }

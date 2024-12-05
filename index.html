@@ -70,11 +70,11 @@
             </div>
             <div>
                 <a href="#" class="nav-menu-item"><i class="fas fa-home me-3"></i>Home</a>
-                <a href="#about" class="nav-menu-item"><i class="fas fa-home me-3"></i>About Me</a>
-                <a href="#skills" class="nav-menu-item"><i class="fab fa-product-hunt me-3"></i>Skills</a>
-                <a href="#projects" class="nav-menu-item"><i class="fas fa-search me-3"></i>My Projects</a>
-                <a href="#education-experience" class="nav-menu-item"><i class="fas fa-wrench me-3"></i>Work
-                    Experience</a>
+                <a href="#about-section" class="nav-menu-item"><i class="fas fa-home me-3"></i>About Me</a>
+                <a href="#skills-section" class="nav-menu-item"><i class="fab fa-product-hunt me-3"></i>Skills</a>
+                <a href="#grades-section" class="nav-menu-item"><i class="fab fa-product-hunt me-3"></i>Grades</a>
+                <a href="#projects-section" class="nav-menu-item"><i class="fas fa-search me-3"></i>My Projects</a>
+                <a href="#work-section" class="nav-menu-item"><i class="fas fa-wrench me-3"></i>Work-Experience</a>
             </div>
         </div>
     </div>
@@ -132,47 +132,84 @@
     <!-- End of Hero Section -->
 
     <!-- Parallax Separator -->
-    <div class="parallax-separator"></div>
+    <div id="about-section" class="parallax-separator">
+        <a href="#about" class="parallax-title">About Me</a>
+    </div>
 
     <!-- About Me Section -->
-    <section id="about" class="py-7">
+    <section id="about" class="py-7 scroll-element">
         <div>
-            <img src="img/Personal-Image-1.jpg" alt="Profile Picture" class="about-img">
+            <img src="img/Personal-Image-1.jpg" alt="Profile Picture" class="about-img scroll-element">
             <div class="about-socials">
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-twitter"></i></a>
-                <a href="#"><i class="bi bi-youtube"></i></a>
+                <a href="https://github.com/ricardodanganan" target="_blank"><i class="bi bi-github"></i></a>
+                <a href="https://linkedin.com/in/ricardo-danganan-jnr" target="_blank"><i
+                        class="bi bi-linkedin"></i></a>
+                <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
             </div>
         </div>
-        <div class="about-text">
+        <div class="about-text scroll-element">
             <p>
-                I am a passionate and driven computing student specializing in web design, database
-                management, scripting, cloud computing, and networking. My commitment to continuous learning
-                fuels my ability to adapt in the ever-evolving ICT landscape. With strong teamwork, communication
-                skills,
-                and a willingness to learn, I aim to contribute effectively to professional environments while
-                growing as a developer.
+                I am a motivated computing student currently pursuing a degree in Computing with
+                IT echnology Management at TUD. With a strong foundation in
+                web design, database management, networking, cloud computing and scripting, I excel at tackling
+                technical challenges
+                and adapting to the ever-evolving ICT landscape.
             </p>
             <p>
-                Beyond academics, I embrace a disciplined and active lifestyle. Whether it's playing video games
-                to fuel creativity or staying committed to fitness through regular gym workouts, boxing, and jogging, I
-                demonstrate dedication, perseverance, and balance in all aspects of life.
+                My strengths include teamwork, communication, and problem-solving,
+                all of which drive my ability to contribute effectively in both academic and professional environments.
             </p>
             <div class="about-buttons">
-                <a href="https://github.com/ricardodanganan" target="_blank" class="github">
-                    <i class="bi bi-github"></i> GitHub
-                </a>
-                <a href="https://linkedin.com/in/ricardo-danganan-jnr" target="_blank" class="linkedin">
-                    <i class="bi bi-linkedin"></i> LinkedIn
-                </a>
+                <!-- Button to Trigger Hobbies Modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#hobbiesModal">
+                    Hobbies & Interests
+                </button>
                 <a href="#" class="cv">Download My CV</a>
             </div>
         </div>
     </section>
+
+    <!-- Hobbies & Interests Modal -->
+    <div class="modal fade" id="hobbiesModal" tabindex="-1" aria-labelledby="hobbiesModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="hobbiesModalLabel">
+                        <img src="img/RD.png" alt="Hobbies Icon"> Hobbies & Interests
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row text-center">
+                        <!-- Hobby 1: Gaming -->
+                        <div class="col-4">
+                            <i class="bi bi-controller" style="font-size: 2rem; color: #0077b5;"></i>
+                            <h6>Gaming</h6>
+                            <p>Exploring RPGs and strategy games to fuel creativity.</p>
+                        </div>
+                        <!-- Hobby 2: Fitness -->
+                        <div class="col-4">
+                            <i class="bi bi-dumbbell" style="font-size: 2rem; color: #00c8ff;"></i>
+                            <h6>Fitness</h6>
+                            <p>Staying disciplined with boxing and jogging.</p>
+                        </div>
+                        <!-- Hobby 3: Tech Exploration -->
+                        <div class="col-4">
+                            <i class="bi bi-laptop" style="font-size: 2rem; color: #0086cc;"></i>
+                            <h6>Tech</h6>
+                            <p>Experimenting with tools and learning new tech.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- End of About Me Section -->
 
     <!-- Parallax Separator -->
-    <div class="parallax-separator"></div>
+    <div id="skills-section" class="parallax-separator">
+        <a href="#skills" class="parallax-title">Skills</a>
+    </div>
 
     <!-- Skills Section -->
     <section class="py-5" id="skills">
@@ -204,6 +241,11 @@
         </div>
     </section>
     <!-- End of Skills Section -->
+
+    <!-- Parallax Separator -->
+    <div id="grades-section" class="parallax-separator">
+        <a href="#education" class="parallax-title">Grades</a>
+    </div>
 
     <!-- Education Section -->
     <section id="education" class="py-5">
@@ -381,7 +423,9 @@
     <!-- End of Education Section -->
 
     <!-- Parallax Separator -->
-    <div class="parallax-separator"></div>
+    <div id="projects-section" class="parallax-separator">
+        <a href="#projects" class="parallax-title">Projects</a>
+    </div>
 
     <!-- Projects Section -->
     <section id="projects" class="py-5">
@@ -754,8 +798,10 @@
     </div>
     <!-- End of Projects Section -->
 
-    <!-- Parallax Separator -->
-    <div class="parallax-separator"></div>
+     <!-- Parallax Separator -->
+     <div id="work-section" class="parallax-separator">
+        <a href="#education-experience" class="parallax-title">Education</a>
+    </div>
 
     <!-- Education and Work Experience Section -->
     <section id="education-experience" class="py-5">
@@ -884,6 +930,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Custom JavaScript -->
     <script src="js/scroll-animation.js"></script>
+    <script src="js/aboutMe.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/script.js"></script>
 
