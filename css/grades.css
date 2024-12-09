@@ -3,7 +3,7 @@
     background-color: #2C2C2C;
     /* Dark background matching the hero section */
     padding: 50px 0;
-    color: #f5f5f5;
+    color: #DCDCDC;
     /* Light text for readability */
 }
 
@@ -16,7 +16,7 @@
 
 /* Accordion Header Styling */
 .accordion-button {
-    background-color: #ffffff;
+    background-color: #DCDCDC;
     /* Dark button background */
     color: #000000;
     /* Light text color */
@@ -56,7 +56,7 @@
     /* Border for separation */
     border-radius: 0px;
     padding: 20px;
-    color: #d3d3d3;
+    color: #DCDCDC;
     /* Softer white for better readability */
     margin: 0;
     /* Removes gap below the header */
@@ -85,7 +85,7 @@
     margin-bottom: 5px;
     list-style-type: disc;
     /* Adds bullet points */
-    color: #f5f5f5;
+    color: #DCDCDC;
 }
 
 /* University Logos */

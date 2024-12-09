@@ -3,12 +3,13 @@
     background-color: #2C2C2C;
     /* Dark background matching the hero section */
     padding: 50px 0;
-    color: #f5f5f5;
+    color: #FFF5EE;
 }
 .card {
     border: none;
     transition: transform 0.3s ease-in-out;
     height: 400px;
+    background-color: #FFF5EE;
 }
 
 .card:hover {
