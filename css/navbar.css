@@ -115,3 +115,33 @@ select.noStyle {
     border: none;
     outline: none;
 }
+
+/* Navbar Logo */
+#navbarLogo {
+    height: 50px; /* Fixed height */
+    max-width: none; /* Prevent scaling */
+    /* Ensure visibility */
+    display: block; 
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth hover effect */
+}
+
+#navbarLogo:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    opacity: 0.8; /* Fade effect */
+}
+
+#logoLink {
+    display: inline-block; /* Ensure proper alignment */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Remove padding for the siteBrand to align the logo properly */
+#siteBrand {
+    padding: 0;
+    font-size: 0; /* Remove any leftover spacing from text */
+}
+
+#logoLink {
+    text-decoration: none; /* Remove underline */
+    display: inline-block;
+}

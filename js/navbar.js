@@ -12,8 +12,4 @@ function menuToggle() {
   }
 }
 
-if (window.innerWidth < 426) siteBrand.innerHTML = "RD";
-window.onresize = function () {
-  if (window.innerWidth < 420) siteBrand.innerHTML = "RD";
-  else siteBrand.innerHTML = "Ricardo Danganan Jnr";
-};
+
