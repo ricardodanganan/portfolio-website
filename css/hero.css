@@ -38,7 +38,7 @@
 /* Scroll Button */
 .scroll-indicator {
     position: absolute;
-    bottom: 30px; /* Adjust position slightly above the bottom */
+    bottom: 75px; /* Adjust position slightly above the bottom */
     left: 50%;
     transform: translateX(-50%);
     font-size: 2rem;
