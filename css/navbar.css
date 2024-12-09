@@ -50,14 +50,6 @@ button.siteLink {
     background: #fff;
 }
 
-#siteBrand {
-    font-family: impact;
-    letter-spacing: -1px;
-    font-size: 32px;
-    color: #252525;
-    line-height: 1em;
-}
-
 #menuDrawer {
     background: #fff;
     position: fixed;
