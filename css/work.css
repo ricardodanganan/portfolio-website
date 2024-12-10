@@ -155,6 +155,11 @@
     object-fit: cover; /* Makes the icon scale proportionally to fill the circle */
 }
 
+.education-timeline-left .education-timeline-icon {
+    margin-left: auto; /* Push the icon to the right inside the left-aligned section */
+    margin-right: 0; /* Reset the right margin */
+}
+
 /* Modal Styling */
 .education-modal {
     display: none; /* Hidden by default */
