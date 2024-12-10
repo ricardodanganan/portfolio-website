@@ -13,8 +13,8 @@ main {
 /* General Animation Styles for Scroll Effects */
 .scroll-element {
     opacity: 0;
-    transform: translateY(175px); /* Start a bit lower */
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    transform: translateY(135px); /* Start a bit lower */
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
 }
 
 .scroll-element.in-view {
