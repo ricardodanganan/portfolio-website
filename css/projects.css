@@ -6,6 +6,8 @@
     color: #DCDCDC;
 }
 .card {
+
+    margin: 45px 10px; /* add margin to top and between cards*/
     border: none;
     transition: transform 0.3s ease-in-out;
     height: 400px;
