@@ -98,7 +98,7 @@ button.navbar-siteLink {
 
 a.navbar-nav-menu-item:hover {
     margin-left: 2px;
-    border-left: 1px solid black;
+    border-left: 15px solid black;
 }
 
 a.navbar-nav-menu-item {
