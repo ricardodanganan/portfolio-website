@@ -84,11 +84,11 @@ button.navbar-siteLink {
     z-index: 1020;
 }
 
-.drawMenu > #navbar-menuDrawer {
+.drawMenu>#navbar-menuDrawer {
     transform: translateX(0%);
 }
 
-.drawMenu > #navbar-mainNavigation {
+.drawMenu>#navbar-mainNavigation {
     transform: translateX(25%);
 }
 
@@ -103,11 +103,13 @@ a.navbar-nav-menu-item:hover {
 
 a.navbar-nav-menu-item {
     transition: border 200ms linear;
+    /* Smooth transition for the border effect */
     text-decoration: none;
     display: block;
     padding: 18px;
     padding-left: 32px;
-    border: 1px solid #000000;
+    border-bottom: 1px solid #eaeaea;
+    /* Add a subtle bottom border to separate menu items */
     font-weight: bold;
     color: #343434;
 }
