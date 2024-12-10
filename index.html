@@ -81,18 +81,18 @@
             </div>
             <!-- Modal Body -->
             <div class="education-modal-body">
-                <form>
+                <form onsubmit="handleSubmit(event)">
                     <div class="mb-3">
                         <label for="nameInput" class="form-label text-primary">Your Name</label>
-                        <input type="text" class="form-control" id="nameInput">
+                        <input type="text" class="form-control" id="nameInput" required>
                     </div>
                     <div class="mb-3">
                         <label for="emailInput" class="form-label text-primary">Your Email</label>
-                        <input type="email" class="form-control" id="emailInput">
+                        <input type="email" class="form-control" id="emailInput" required>
                     </div>
                     <div class="mb-3">
                         <label for="messageInput" class="form-label text-primary">Your Message</label>
-                        <textarea class="form-control" id="messageInput" rows="4"></textarea>
+                        <textarea class="form-control" id="messageInput" rows="4" required></textarea>
                     </div>
                     <button type="submit" class="education-timeline-button w-100">
                         <i class="bi bi-envelope me-2"></i> Send Message
@@ -101,8 +101,15 @@
             </div>
         </div>
     </div>
-    <!-- End of Navbar Contact Modal -->
+    <!-- Toast Container -->
+    <div id="confirmationModal" class="confirmation-modal">
+        <div class="confirmation-content">
+            <p id="confirmationMessage" class="confirmation-message"></p>
+        </div>
+    </div>
+    
 
+    <!-- End of Navbar Contact Modal -->
 
     <!-- Hero Section -->
     <header id="hero" class="d-flex align-items-center"
