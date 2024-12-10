@@ -109,6 +109,7 @@
     text-transform: uppercase;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none; /* Removes underline from links */
 }
 
 /* Button Hover Effect */
@@ -152,6 +153,20 @@
     height: 100%;
     object-fit: cover; /* Makes the icon scale proportionally to fill the circle */
 }
+
+/* Animation: Initially hidden */
+.education-timeline-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Animation: When visible */
+.education-timeline-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 /* Animation */
 @keyframes fadeIn {
