@@ -23,3 +23,30 @@ document.addEventListener("DOMContentLoaded", () => {
     // Run on page load to account for already visible items
     scrollAnimations();
 });
+
+// Open Modal
+function educationOpenModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+        modal.style.display = "block";
+    }
+}
+
+// Close Modal
+function educationCloseModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+        modal.style.display = "none";
+    }
+}
+
+// Close Modal When Clicking Outside
+window.onclick = function (event) {
+    const modals = document.querySelectorAll(".education-modal");
+    modals.forEach(modal => {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+};
+

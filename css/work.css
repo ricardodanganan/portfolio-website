@@ -154,17 +154,22 @@
     object-fit: cover; /* Makes the icon scale proportionally to fill the circle */
 }
 
-/* Animation: Initially hidden */
+/* Default Hidden State */
 .education-timeline-item {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateX(50px); /* Default animation (right) */
     transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-/* Animation: When visible */
+/* For Left Items */
+.education-timeline-left {
+    transform: translateX(-50px); /* Animation (left) */
+}
+
+/* When Visible */
 .education-timeline-item.visible {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0); /* Return to original position */
 }
 
 
@@ -180,7 +185,6 @@
     }
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .education-timeline {
         padding: 20px 0;
@@ -198,11 +202,172 @@
     }
 
     .education-timeline-content {
-        margin: 0 !important;
+        margin: 0 auto !important;
     }
 
-    .education-timeline::before {
-        left: 50%;
+    .education-timeline-icon {
+        margin: 0 auto 10px auto !important; /* Center icon on mobile */
+    }
+
+    .education-timeline-left .education-timeline-icon,
+    .education-timeline-right .education-timeline-icon {
+        margin-left: auto; /* Overrides the desktop alignment */
+        margin-right: auto; /* Centers the icon */
     }
 }
+
+/* Modal Styling */
+.education-modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000; /* Ensures it appears above everything else */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scrolling for overflowing content */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+}
+
+/* Modal Content */
+.education-modal-content {
+    background-color: #DCDCDC; /* White background for the body */
+    color: #000000; /* Dark text for the body */
+    margin: 10% auto; /* Center the modal */
+    border-radius: 10px;
+    overflow: hidden; /* Ensures header and body align properly */
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    font-family: Arial, sans-serif;
+}
+
+/* Modal Header */
+.education-modal-header {
+    background-color: #2C2C2C; /* Dark background for the header */
+    color: #ffffff; /* Light text for the header */
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Modal Body */
+.education-modal-body {
+    padding: 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Close Button */
+.education-modal-header .education-close {
+    color: #ffffff;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.education-modal-header .education-close:hover,
+.education-modal-header .education-close:focus {
+    color: #ff4d4d; /* Highlight color on hover */
+    text-decoration: none;
+}
+
+/* Modal Info Section */
+.education-modal-info {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.education-modal-info img {
+    border-radius: 50%;
+    border: 2px solid #DCDCDC;
+}
+
+/* Modal Badges */
+.education-modal-badges {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap; /* Ensures badges wrap to the next line if necessary */
+}
+
+.education-modal-badges .badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff; /* Text color */
+}
+
+.education-modal-badges .badge-success {
+    background-color: #28a745; /* Green */
+}
+
+.education-modal-badges .badge-primary {
+    background-color: #007bff; /* Blue */
+}
+
+/* Buttons */
+.education-timeline-button,
+.education-close-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+}
+
+.education-timeline-button:hover,
+.education-close-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+.education-timeline-button:active,
+.education-close-btn:active {
+    transform: scale(0.95); /* Slightly shrink on click */
+    background-color: #003f8a; /* Even darker blue on active */
+}
+
+/* Grade Colors */
+.grade {
+    font-weight: bold;
+    padding: 2px 5px;
+    border-radius: 3px;
+    color: #ffffff; /* White text by default */
+}
+
+/* Specific Grades */
+.grade-a {
+    background-color: #28a745; /* Green */
+}
+
+.grade-b {
+    background-color: #007bff; /* Blue */
+}
+
+.grade-c {
+    background-color: #ffc107; /* Yellow */
+}
+
+.grade-d {
+    background-color: #fd7e14; /* Orange */
+}
+
+.grade-f {
+    background-color: #dc3545; /* Red */
+}
+
 
