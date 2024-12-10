@@ -10,6 +10,11 @@ main {
     padding: 0px;
 }
 
+html, body {
+    overflow-x: hidden; /* Disable horizontal scrolling */ 
+    max-width: 100%; /* Prevent elements from exceeding the viewport width */   
+}
+
 /* General Animation Styles for Scroll Effects */
 .scroll-element {
     opacity: 0;
