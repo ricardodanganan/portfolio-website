@@ -7,7 +7,7 @@
 }
 .card {
 
-    margin: 45px 10px; /* add margin to top and between cards*/
+    margin: 50px 10px 50px 0;
     border: none;
     transition: transform 0.3s ease-in-out;
     height: 400px;
