@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css/work.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 
 <body>
@@ -107,7 +108,7 @@
             <p id="confirmationMessage" class="confirmation-message"></p>
         </div>
     </div>
-    
+
 
     <!-- End of Navbar Contact Modal -->
 
@@ -920,6 +921,55 @@
     </section>
     <!-- End of Education and Work Experience Section -->
 
+    <!-- Contact Section -->
+    <!-- Notification Bar -->
+    <div id="contact-form-notification-bar" class="contact-form-notification-bar"></div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="d-flex align-items-center"
+        style="background: url('./img/map-background.jpg') no-repeat center center; background-size: cover; position: relative; padding: 50px 0;">
+        <div class="container text-center contact-container">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out for any inquiries or collaborations.</p>
+
+            <!-- Contact Information -->
+            <div class="row my-4">
+                <div class="col-md-4">
+                    <i class="bi bi-envelope-fill contact-icon"></i>
+                    <p>dev@email.com</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="bi bi-geo-alt-fill contact-icon"></i>
+                    <p>Banguntapan, Yogyakarta, ID 55198</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="bi bi-telephone-fill contact-icon"></i>
+                    <p>+62 123 456 7890</p>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <form onsubmit="handleContactFormSubmit(event)" style="max-width: 600px; margin: 0 auto;">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <input type="text" class="form-control contact-input" id="contact-form-name" placeholder="Name"
+                            required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <input type="email" class="form-control contact-input" id="contact-form-email"
+                            placeholder="Email" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control contact-input" id="contact-form-message" rows="4"
+                        placeholder="Message..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block contact-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <!-- End of Contact Section -->
+
     <!-- Footer Section -->
     <footer id="footer" class="py-4">
         <div class="container text-center">
@@ -948,6 +998,7 @@
     <script src="js/navbar.js"></script>
     <script src="js/script.js"></script>
     <script src="js/hero.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 
 </html>
