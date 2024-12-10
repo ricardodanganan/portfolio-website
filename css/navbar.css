@@ -173,7 +173,7 @@ select.navbar-noStyle {
 }
 
 .confirmation-content {
-    background: white;
+    background: #00c8ff;
     padding: 20px 30px;
     border-radius: 8px;
     text-align: center;
@@ -186,7 +186,7 @@ select.navbar-noStyle {
 }
 
 .confirmation-success {
-    color: #007bff; /* Green */
+    color: #ffffff; 
 }
 
 .confirmation-error {

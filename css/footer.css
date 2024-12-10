@@ -32,4 +32,49 @@
     text-decoration: none;
 }
 
+
+/* Footer Section */
+#footer {
+    background-color: #2C2C2C; /* Dark background */
+    color: white;
+    text-align: center;
+}
+
+#footer p {
+    margin-bottom: 10px;
+    color: #ddd; /* Softer text color */
+    font-size: 0.9rem;
+}
+
+/* Social Icons */
+.footer-social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Spacing between icons */
+}
+
+.footer-icon {
+    font-size: 1.5rem;
+    color: white;
+    transition: transform 0.3s, color 0.3s;
+    display: inline-block;
+}
+
+.footer-icon:hover {
+    transform: scale(1.2); /* Slightly enlarge on hover */
+}
+
+/* Brand Colors */
+.github-icon:hover {
+    color: #757575; /* GitHub black */
+}
+
+.linkedin-icon:hover {
+    color: #0077b5; /* LinkedIn blue */
+}
+
+.facebook-icon:hover {
+    color: #0247d3; /* Facebook blue */
+}
+
 /* End of Footer Section */
