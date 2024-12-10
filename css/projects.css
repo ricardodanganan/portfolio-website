@@ -3,13 +3,14 @@
     background-color: #2C2C2C;
     /* Dark background matching the hero section */
     padding: 50px 0;
-    color: #FFF5EE;
+    color: #DCDCDC;
 }
 .card {
     border: none;
     transition: transform 0.3s ease-in-out;
     height: 400px;
-    background-color: #FFF5EE;
+    background-color: #DCDCDC;
+    background: #DCDCDC;
 }
 
 .card:hover {
@@ -22,7 +23,7 @@
     width: 100%; /* Make the image fill the card width */
     height: 200px; /* Set a fixed height */
     object-fit: cover; /* Crop the image proportionally to fit */
-    border-bottom: 1px solid #ddd; /* Optional: add a border under the image */
+    border-bottom: 1px solid #DCDCDC; /* Optional: add a border under the image */
 }
 
 /* Styling for card titles and buttons */
