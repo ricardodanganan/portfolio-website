@@ -27,23 +27,20 @@
     <!-- Navbar -->
     <div class="navbarMain">
         <div class="flexMain">
-            <div class="flex1">
-
-            </div>
+            <div class="flex1"></div>
             <div class="flex2 text-center">
                 <div><strong>Welcome to my Portfolio Website (Still in development)</strong></div>
             </div>
-            <div class="flex1">
-
-            </div>
+            <div class="flex1"></div>
         </div>
     </div>
     <div id="menuHolder" class="sticky-top">
         <div role="navigation" class="sticky-top border-bottom border-top" id="mainNavigation">
             <div class="flexMain">
                 <div class="flex2">
-                    <button class="whiteLink siteLink" style="border-right:1px solid #eaeaea" onclick="menuToggle()"><i
-                            class="fas fa-bars me-2"></i> MENU</button>
+                    <button class="whiteLink siteLink" style="border-right:1px solid #eaeaea" onclick="menuToggle()">
+                        <i class="fas fa-bars me-2"></i> MENU
+                    </button>
                 </div>
                 <div class="flex3 text-center" id="siteBrand">
                     <a href="#hero" id="logoLink">
@@ -53,10 +50,9 @@
                 <div class="flex2 text-end d-block d-md-none">
                     <button class="whiteLink siteLink"><i class="fas fa-search"></i></button>
                 </div>
-
                 <div class="flex2 text-end d-none d-md-block">
-                    <button class="blackLink siteLink" class="btn-contact" data-bs-toggle="modal"
-                        data-bs-target="#contactModal">CONTACT ME</button>
+                    <button class="blackLink siteLink" onclick="educationOpenModal('education-contactModal')">CONTACT
+                        ME</button>
                 </div>
             </div>
         </div>
@@ -82,40 +78,38 @@
     <!-- End of Navbar -->
 
     <!-- Navbar Contact Modal -->
-    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title text-primary" id="contactModalLabel">
-                        <img src="img/RD.png" alt="Contact Icon" class="me-2" style="width: 30px;"> Contact Me
-                    </h5>
-                    <button type="button" class="custom-close-btn" data-bs-dismiss="modal" aria-label="Close">
-                        <i class="fas fa-times"></i>
+    <div id="education-contactModal" class="education-modal">
+        <div class="education-modal-content">
+            <!-- Modal Header -->
+            <div class="education-modal-header text-primary">
+                <img src="img/RD.png" alt="Contact Icon" style="width: 30px; margin-right: 10px;">
+                Contact Me
+                <span class="education-close" onclick="educationCloseModal('education-contactModal')">&times;</span>
+            </div>
+            <!-- Modal Body -->
+            <div class="education-modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="nameInput" class="form-label text-primary">Your Name</label>
+                        <input type="text" class="form-control" id="nameInput">
+                    </div>
+                    <div class="mb-3">
+                        <label for="emailInput" class="form-label text-primary">Your Email</label>
+                        <input type="email" class="form-control" id="emailInput">
+                    </div>
+                    <div class="mb-3">
+                        <label for="messageInput" class="form-label text-primary">Your Message</label>
+                        <textarea class="form-control" id="messageInput" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="education-timeline-button w-100">
+                        <i class="bi bi-envelope me-2"></i> Send Message
                     </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="mb-3">
-                            <label for="nameInput" class="form-label text-primary">Your Name</label>
-                            <input type="text" class="form-control" id="nameInput">
-                        </div>
-                        <div class="mb-3">
-                            <label for="emailInput" class="form-label text-primary">Your Email</label>
-                            <input type="email" class="form-control" id="emailInput">
-                        </div>
-                        <div class="mb-3">
-                            <label for="messageInput" class="form-label text-primary">Your Message</label>
-                            <textarea class="form-control" id="messageInput" rows="4"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary w-100">
-                            <i class="bi bi-envelope me-2"></i> Send Message
-                        </button>
-                    </form>
-                </div>
+                </form>
             </div>
         </div>
     </div>
     <!-- End of Navbar Contact Modal -->
+
 
     <!-- Hero Section -->
     <header id="hero" class="d-flex align-items-center"
@@ -163,7 +157,7 @@
             </p>
             <div class="about-buttons">
                 <!-- Button to Trigger Hobbies Modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#hobbiesModal">
+                <button type="button" class="btn btn-primary" onclick="educationOpenModal('education-hobbiesModal')">
                     Hobbies & Interests
                 </button>
                 <!-- Download CV Button -->
@@ -173,42 +167,40 @@
     </section>
 
     <!-- Hobbies & Interests Modal -->
-    <div class="modal fade" id="hobbiesModal" tabindex="-1" aria-labelledby="hobbiesModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="hobbiesModalLabel">
-                        <img src="img/RD.png" alt="Hobbies Icon"> Hobbies & Interests
-                    </h5>
-                    <button type="button" class="custom-close-btn" data-bs-dismiss="modal" aria-label="Close">
-                        <i class="fas fa-times"></i>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="row text-center">
-                        <!-- Hobby 1: Gaming -->
-                        <div class="col-4">
-                            <i class="fas fa-gamepad" style="font-size: 2rem; color: #000cb5;"></i>
-                            <h6>Gaming</h6>
-                            <p>Exploring RPGs and strategy games to fuel creativity.</p>
-                        </div>
-                        <!-- Hobby 2: Fitness -->
-                        <div class="col-4">
-                            <i class="fas fa-dumbbell" style="font-size: 2rem; color: #000cb5;"></i>
-                            <h6>Fitness</h6>
-                            <p>Staying disciplined with boxing and jogging.</p>
-                        </div>
-                        <!-- Hobby 3: Tech Exploration -->
-                        <div class="col-4">
-                            <i class="fas fa-desktop" style="font-size: 2rem; color: #000cb5;"></i>
-                            <h6>Tech</h6>
-                            <p>Experimenting with tools and learning new tech.</p>
-                        </div>
+    <div id="education-hobbiesModal" class="education-modal">
+        <div class="education-modal-content">
+            <!-- Modal Header -->
+            <div class="education-modal-header text-primary">
+                <img src="img/RD.png" alt="Hobbies Icon" style="width: 30px; margin-right: 10px;">
+                Hobbies & Interests
+                <span class="education-close" onclick="educationCloseModal('education-hobbiesModal')">&times;</span>
+            </div>
+            <!-- Modal Body -->
+            <div class="education-modal-body">
+                <div class="row text-center">
+                    <!-- Hobby 1: Gaming -->
+                    <div class="col-4">
+                        <i class="fas fa-gamepad" style="font-size: 2rem; color: #000cb5;"></i>
+                        <h6>Gaming</h6>
+                        <p>Exploring RPGs and strategy games to fuel creativity.</p>
+                    </div>
+                    <!-- Hobby 2: Fitness -->
+                    <div class="col-4">
+                        <i class="fas fa-dumbbell" style="font-size: 2rem; color: #000cb5;"></i>
+                        <h6>Fitness</h6>
+                        <p>Staying disciplined with boxing and jogging.</p>
+                    </div>
+                    <!-- Hobby 3: Tech Exploration -->
+                    <div class="col-4">
+                        <i class="fas fa-desktop" style="font-size: 2rem; color: #000cb5;"></i>
+                        <h6>Tech</h6>
+                        <p>Experimenting with tools and learning new tech.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- End of Hobbies & Interests Modal -->
     <!-- End of About Me Section -->
 
     <!-- Parallax Separator -->
@@ -254,7 +246,6 @@
 
     <!-- Projects Section -->
     <section id="projects" class="py-5">
-
         <div class="container">
             <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel">
                 <!-- Carousel Indicators -->
@@ -270,57 +261,51 @@
                     <!-- Slide 1 -->
                     <div class="carousel-item active">
                         <div class="row">
+                            <!-- Project 1 -->
                             <div class="col-md-4 scroll-element">
                                 <div class="card">
                                     <img src="img/2nd-YearProject-1.jpg" class="card-img-top" alt="Bike Rental System">
                                     <div class="card-body text-center">
                                         <h5 class="card-title my-3">Bike Rental System</h5>
-                                        <!-- Technologies Used -->
                                         <div class="technologies my-3">
                                             <img src="img/html-logo.png" alt="HTML" class="tech-logo">
                                             <img src="img/css-logo.png" alt="CSS" class="tech-logo">
-                                            <img src="img/javascript-logo.png" alt="Javascript" class="tech-logo">
+                                            <img src="img/javascript-logo.png" alt="JavaScript" class="tech-logo">
                                             <img src="img/bash-logo.png" alt="Bash" class="tech-logo">
                                         </div>
-                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                            data-bs-target="#projectModal1">
-                                            Show More
-                                        </button>
+                                        <button type="button" class="education-timeline-button"
+                                            onclick="educationOpenModal('education-projectModal1')">Show More</button>
                                     </div>
                                 </div>
                             </div>
+                            <!-- Project 2 -->
                             <div class="col-md-4 scroll-element">
                                 <div class="card">
                                     <img src="img/JAVA-text-base-RPG-1.jpg" class="card-img-top"
                                         alt="Java Text-Based RPG">
                                     <div class="card-body text-center">
                                         <h5 class="card-title my-3">Java Text-Based RPG</h5>
-                                        <!-- Technologies Used -->
                                         <div class="technologies my-3">
                                             <img src="img/java-logo.png" alt="Java" class="tech-logo">
                                         </div>
-                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                            data-bs-target="#projectModal2">
-                                            Show More
-                                        </button>
+                                        <button type="button" class="education-timeline-button"
+                                            onclick="educationOpenModal('education-projectModal2')">Show More</button>
                                     </div>
                                 </div>
                             </div>
+                            <!-- Project 3 -->
                             <div class="col-md-4 scroll-element">
                                 <div class="card">
                                     <img src="img/First-Year-Project.jpg" class="card-img-top"
                                         alt="First Year Web Development Project">
                                     <div class="card-body text-center">
                                         <h5 class="card-title my-3">Visual Design Project</h5>
-                                        <!-- Technologies Used -->
                                         <div class="technologies my-3">
                                             <img src="img/html-logo.png" alt="HTML" class="tech-logo">
                                             <img src="img/css-logo.png" alt="CSS" class="tech-logo">
                                         </div>
-                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                            data-bs-target="#projectModal3">
-                                            Show More
-                                        </button>
+                                        <button type="button" class="education-timeline-button"
+                                            onclick="educationOpenModal('education-projectModal3')">Show More</button>
                                     </div>
                                 </div>
                             </div>
@@ -329,66 +314,59 @@
                     <!-- Slide 2 -->
                     <div class="carousel-item">
                         <div class="row">
+                            <!-- Project 4 -->
                             <div class="col-md-4 scroll-element">
                                 <div class="card">
                                     <img src="img/4th-Year-Project-1.jpg" class="card-img-top"
                                         alt="Gaming Dashboard Overview">
                                     <div class="card-body text-center">
                                         <h5 class="card-title my-3">Gaming Dashboard</h5>
-                                        <!-- Technologies Used -->
                                         <div class="technologies my-3">
-                                            <img src="img/powershell-logo.png" alt="Powershell" class="tech-logo">
+                                            <img src="img/powershell-logo.png" alt="PowerShell" class="tech-logo">
                                             <img src="img/html-logo.png" alt="HTML" class="tech-logo">
                                             <img src="img/css-logo.png" alt="CSS" class="tech-logo">
-                                            <img src="img/node-logo.png" alt="Node" class="tech-logo">
-                                            <img src="img/react-logo.png" alt="React" class="tech-logo">
+                                            <img src="img/node-logo.png" alt="Node.js" class="tech-logo">
+                                            <img src="img/react-logo.png" alt="React.js" class="tech-logo">
                                         </div>
-                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                            data-bs-target="#projectModal4">
-                                            Show More
-                                        </button>
+                                        <button type="button" class="education-timeline-button"
+                                            onclick="educationOpenModal('education-projectModal4')">Show More</button>
                                     </div>
                                 </div>
                             </div>
+                            <!-- Project 5 -->
                             <div class="col-md-4 scroll-element">
                                 <div class="card">
                                     <img src="img/Game-Performance-Monitor-1.jpg" class="card-img-top"
                                         alt="Performance Optimization">
                                     <div class="card-body text-center">
                                         <h5 class="card-title my-3">Performance Optimization</h5>
-                                        <!-- Technologies Used -->
                                         <div class="technologies my-3">
-                                            <img src="img/powershell-logo.png" alt="Powershell" class="tech-logo">
+                                            <img src="img/powershell-logo.png" alt="PowerShell" class="tech-logo">
                                             <img src="img/html-logo.png" alt="HTML" class="tech-logo">
                                             <img src="img/css-logo.png" alt="CSS" class="tech-logo">
-                                            <img src="img/node-logo.png" alt="Node" class="tech-logo">
-                                            <img src="img/react-logo.png" alt="React" class="tech-logo">
+                                            <img src="img/node-logo.png" alt="Node.js" class="tech-logo">
+                                            <img src="img/react-logo.png" alt="React.js" class="tech-logo">
                                         </div>
-                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                            data-bs-target="#projectModal5">
-                                            Show More
-                                        </button>
+                                        <button type="button" class="education-timeline-button"
+                                            onclick="educationOpenModal('education-projectModal5')">Show More</button>
                                     </div>
                                 </div>
                             </div>
+                            <!-- Project 6 -->
                             <div class="col-md-4 scroll-element">
                                 <div class="card">
-                                    <img src="img/Gaming-Library.jpg" class="card-img-top"
-                                        alt="Performance Optimization">
+                                    <img src="img/Gaming-Library.jpg" class="card-img-top" alt="Gaming Library">
                                     <div class="card-body text-center">
                                         <h5 class="card-title my-3">Gaming Library</h5>
-                                        <!-- Technologies Used -->
                                         <div class="technologies my-3">
-                                            <img src="img/powershell-logo.png" alt="Powershell" class="tech-logo">
+                                            <img src="img/powershell-logo.png" alt="PowerShell" class="tech-logo">
                                             <img src="img/html-logo.png" alt="HTML" class="tech-logo">
                                             <img src="img/css-logo.png" alt="CSS" class="tech-logo">
-                                            <img src="img/node-logo.png" alt="Node" class="tech-logo">
-                                            <img src="img/react-logo.png" alt="React" class="tech-logo">
+                                            <img src="img/node-logo.png" alt="Node.js" class="tech-logo">
+                                            <img src="img/react-logo.png" alt="React.js" class="tech-logo">
                                         </div>
-                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                            data-bs-target="#projectModal6">
-                                            Show More
-                                        </button>
+                                        <button type="button" class="education-timeline-button"
+                                            onclick="educationOpenModal('education-projectModal6')">Show More</button>
                                     </div>
                                 </div>
                             </div>
@@ -411,210 +389,169 @@
         </div>
     </section>
 
-    <!-- Modals -->
     <!-- Modal for Bike Rental System -->
-    <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModal1Label" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="projectModal1Label">Bike Rental System</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div id="education-projectModal1" class="education-modal">
+        <div class="education-modal-content">
+            <div class="education-modal-header text-primary">
+                Bike Rental System
+                <span class="education-close" onclick="educationCloseModal('education-projectModal1')">&times;</span>
+            </div>
+            <div class="education-modal-body">
+                <p>
+                    My final project for my second year, the Bike Rental System, is a responsive, user-friendly website
+                    that allows users to browse, book, subscribe to newsletters, and manage bike rentals. Features
+                    include
+                    user registration with Supabase, Google Maps API integration for browsing rental locations, and
+                    real-time
+                    updates on bike availability and pricing using MQTT.
+                </p>
+                <div class="education-modal-badges">
+                    <span class="badge bg-info text-dark">CSS (33.7%)</span>
+                    <span class="badge bg-warning text-dark">JavaScript (31.6%)</span>
+                    <span class="badge bg-primary">HTML (23.5%)</span>
+                    <span class="badge bg-dark">Shell (10.8%)</span>
+                    <span class="badge bg-secondary">Python (0.4%)</span>
+                    <span class="badge bg-warning">Supabase</span>
                 </div>
-                <div class="modal-body">
-                    <p class="card-text text-dark">
-                        My final project for my second year, the Bike Rental System, is a responsive,
-                        user-friendly website
-                        that allows users to browse, book, subscribe to newsletters, and manage bike
-                        rentals. Features include
-                        user registration with Supabase, Google Maps API integration for browsing rental
-                        locations, and real-time
-                        updates on bike availability and pricing using MQTT.
-                        <br> <br>
-                        Unofrtunately, the project's Supabase database has been expired and cannot be restored.
-                    </p>
-                    <p>
-                        <span class="badge bg-info text-dark">CSS (33.7%)</span>
-                        <span class="badge bg-warning text-dark">JavaScript (31.6%)</span>
-                        <span class="badge bg-primary">HTML (23.5%)</span>
-                        <span class="badge bg-dark">Shell (10.8%)</span>
-                        <span class="badge bg-secondary">Python (0.4%)</span>
-                        <span class="badge bg-warning">Supabase</span>
-                    </p>
-                    <a href="https://github.com/YourGitHubLink/Bike-Rental-System" target="_blank"
-                        class="btn btn-primary">View on GitHub</a>
-                    <a href="https://bike-rental-supabase-mqtt.vercel.app/" target="_blank"
-                        class="btn btn-primary">Link</a>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
+                <a href="https://github.com/YourGitHubLink/Bike-Rental-System" target="_blank"
+                    class="education-timeline-button">View on GitHub</a>
+                <a href="https://bike-rental-supabase-mqtt.vercel.app/" target="_blank"
+                    class="education-timeline-button">Link</a>
             </div>
         </div>
     </div>
 
     <!-- Modal for Java Text-Based RPG -->
-    <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModal2Label" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="projectModal2Label">Java Text-Based RPG</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div id="education-projectModal2" class="education-modal">
+        <div class="education-modal-content">
+            <div class="education-modal-header text-primary">
+                Java Text-Based RPG
+                <span class="education-close" onclick="educationCloseModal('education-projectModal2')">&times;</span>
+            </div>
+            <div class="education-modal-body">
+                <p>
+                    Part of my final project for the Computer Science PLC, this project focuses on a text-based
+                    old-school RPG
+                    built entirely using Java. The game emphasizes user interaction through text commands and features
+                    story
+                    progression, enemy encounters, and inventory management.
+                </p>
+                <div class="education-modal-badges">
+                    <span class="badge bg-warning text-dark">Java (100%)</span>
                 </div>
-                <div class="modal-body">
-                    <p class="card-text text-dark">
-                        Part of my final project for the Computer Science PLC, this project focuses on a
-                        text-based
-                        old-school RPG built entirely using Java. The game emphasizes user interaction
-                        through text commands
-                        and features story progression, enemy encounters, and inventory management.
-                    </p>
-                    <p>
-                        <span class="badge bg-warning text-dark">Java (100%)</span>
-                    </p>
-                    <a href="https://github.com/YourGitHubLink/Java-Text-Based-RPG" target="_blank"
-                        class="btn btn-primary">View on GitHub</a>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
+                <a href="https://github.com/YourGitHubLink/Java-Text-Based-RPG" target="_blank"
+                    class="education-timeline-button">View on GitHub</a>
             </div>
         </div>
     </div>
 
     <!-- Modal for First Year Web Design Project -->
-    <div class="modal fade" id="projectModal3" tabindex="-1" aria-labelledby="projectModal3Label" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="projectModal3Label">1st Year Web Design Project</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div id="education-projectModal3" class="education-modal">
+        <div class="education-modal-content">
+            <div class="education-modal-header text-primary">
+                1st Year Web Design Project
+                <span class="education-close" onclick="educationCloseModal('education-projectModal3')">&times;</span>
+            </div>
+            <div class="education-modal-body">
+                <p>
+                    Part of my first-year web development module, this project highlights the modules I took during my
+                    first
+                    year. It features an elegant, responsive design using HTML and CSS and serves as an introduction to
+                    web
+                    development concepts like semantic structure, styling, and accessibility.
+                </p>
+                <div class="education-modal-badges">
+                    <span class="badge bg-info text-dark">CSS (52.6%)</span>
+                    <span class="badge bg-danger">HTML (47.4%)</span>
                 </div>
-                <div class="modal-body">
-                    <p class="card-text text-dark">
-                        Part of my first-year web development module, this project highlights the
-                        modules I took during my
-                        first year. It features an elegant, responsive design using HTML and CSS and
-                        serves as an introduction
-                        to web development concepts like semantic structure, styling, and accessibility.
-                    </p>
-                    <p>
-                        <span class="badge bg-info text-dark">CSS (52.6%)</span>
-                        <span class="badge bg-danger">HTML (47.4%)</span>
-                    </p>
-                    <a href="https://github.com/YourGitHubLink/First-Year-Web-Dev-Project" target="_blank"
-                        class="btn btn-primary">View on GitHub</a>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
+                <a href="https://github.com/YourGitHubLink/First-Year-Web-Dev-Project" target="_blank"
+                    class="education-timeline-button">View on GitHub</a>
             </div>
         </div>
     </div>
 
     <!-- Modal for Gaming Dashboard Overview -->
-    <div class="modal fade" id="projectModal4" tabindex="-1" aria-labelledby="projectModal4Label" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="projectModal4Label">Gaming Dashboard Overview</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p class="card-text text-dark">
-                        This Feature for my 4th year project is part of my 4th-year project portfolio, A
-                        comprehensive gaming
-                        dashboard for Steam users that combines game optimization,
-                        game management, community interaction, and analytics. This platform serves as a
-                        central hub for managing the gaming experience, including game recommendations,
-                        performance monitoring, price tracking, and community engagement.
-                        <br> <br>
-                        This Feature for my 4th year project is still in development and will be updated soon.
-                    </p>
-                    <p>
-                        <span class="badge bg-info text-dark">Node.js</span>
-                        <span class="badge bg-primary">React.js</span>
-                        <span class="badge bg-info text-dark">CSS</span>
-                        <span class="badge bg-danger">HTML</span>
-                        <span class="badge bg-dark">PowerShell</span>
-                        <span class="badge bg-warning">Supabase</span>
-                        <span class="badge bg-success">In Development</span>
-
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    <div id="education-projectModal4" class="education-modal">
+        <div class="education-modal-content">
+            <div class="education-modal-header text-primary">
+                Gaming Dashboard Overview
+                <span class="education-close" onclick="educationCloseModal('education-projectModal4')">&times;</span>
+            </div>
+            <div class="education-modal-body">
+                <p>
+                    This feature is part of my 4th-year project portfolio, a comprehensive gaming dashboard for Steam
+                    users
+                    that combines game optimization, game management, community interaction, and analytics. This
+                    platform
+                    serves as a central hub for managing the gaming experience, including game recommendations,
+                    performance
+                    monitoring, price tracking, and community engagement.
+                </p>
+                <div class="education-modal-badges">
+                    <span class="badge bg-info text-dark">Node.js</span>
+                    <span class="badge bg-primary">React.js</span>
+                    <span class="badge bg-info text-dark">CSS</span>
+                    <span class="badge bg-danger">HTML</span>
+                    <span class="badge bg-dark">PowerShell</span>
+                    <span class="badge bg-warning">Supabase</span>
+                    <span class="badge bg-success">In Development</span>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Modal for Performance Optimization -->
-    <div class="modal fade" id="projectModal5" tabindex="-1" aria-labelledby="projectModal5Label" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="projectModal5Label">Performance Optimization</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p class="card-text text-dark">
-                        This Feature for my 4th year project is part of my 4th-year project portfolio, focuses on
-                        enhancing the gaming experience by
-                        leveraging system performance data to provide optimization recommendations. By using
-                        PowerShell
-                        scripts, the application collects hardware specifications, including CPU, GPU, RAM, and
-                        storage.
-                        <br> <br>
-                        This Feature for my 4th year project is still in development and will be updated soon.
-                    </p>
-                    <p>
-                        <span class="badge bg-info text-dark">Node.js</span>
-                        <span class="badge bg-primary">React.js</span>
-                        <span class="badge bg-info text-dark">CSS</span>
-                        <span class="badge bg-danger">HTML</span>
-                        <span class="badge bg-dark">PowerShell</span>
-                        <span class="badge bg-warning">Supabase</span>
-                        <span class="badge bg-success">In Development</span>
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    <div id="education-projectModal5" class="education-modal">
+        <div class="education-modal-content">
+            <div class="education-modal-header text-primary">
+                Performance Optimization
+                <span class="education-close" onclick="educationCloseModal('education-projectModal5')">&times;</span>
+            </div>
+            <div class="education-modal-body">
+                <p>
+                    This feature for my 4th-year project portfolio focuses on enhancing the gaming experience by
+                    leveraging
+                    system performance data to provide optimization recommendations. By using PowerShell scripts, the
+                    application collects hardware specifications, including CPU, GPU, RAM, and storage.
+                </p>
+                <div class="education-modal-badges">
+                    <span class="badge bg-info text-dark">Node.js</span>
+                    <span class="badge bg-primary">React.js</span>
+                    <span class="badge bg-info text-dark">CSS</span>
+                    <span class="badge bg-danger">HTML</span>
+                    <span class="badge bg-dark">PowerShell</span>
+                    <span class="badge bg-warning">Supabase</span>
+                    <span class="badge bg-success">In Development</span>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal for Gaming library -->
-    <div class="modal fade" id="projectModal6" tabindex="-1" aria-labelledby="projectModal6Label" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="projectModal6Label">Gaming Library</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p class="card-text text-dark">
-                        This Feature for my 4th year project is part of my 4th-year project portfolio, is a gaming
-                        library dashboard that fetches
-                        and displays the user's Steam game collection. By integrating SteamOpenID for authentication
-                        and using the Steam API, the dashboard retrieves detailed information about the user's
-                        games,
-                        including playtime, achievements, and game metadata.
-                        <br> <br>
-                        This Feature for my 4th year project is still in development and will be updated soon.
-                    </p>
-                    <p>
-                        <span class="badge bg-info text-dark">Node.js</span>
-                        <span class="badge bg-primary">React.js</span>
-                        <span class="badge bg-info text-dark">CSS</span>
-                        <span class="badge bg-danger">HTML</span>
-                        <span class="badge bg-dark">PowerShell</span>
-                        <span class="badge bg-warning">Supabase</span>
-                        <span class="badge bg-success">In Development</span>
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    <!-- Modal for Gaming Library -->
+    <div id="education-projectModal6" class="education-modal">
+        <div class="education-modal-content">
+            <div class="education-modal-header text-primary">
+                Gaming Library
+                <span class="education-close" onclick="educationCloseModal('education-projectModal6')">&times;</span>
+            </div>
+            <div class="education-modal-body">
+                <p>
+                    This feature for my 4th-year project portfolio is a gaming library dashboard that fetches and
+                    displays the
+                    user's Steam game collection. By integrating SteamOpenID for authentication and using the Steam API,
+                    the
+                    dashboard retrieves detailed information about the user's games, including playtime, achievements,
+                    and
+                    game metadata.
+                </p>
+                <div class="education-modal-badges">
+                    <span class="badge bg-info text-dark">Node.js</span>
+                    <span class="badge bg-primary">React.js</span>
+                    <span class="badge bg-info text-dark">CSS</span>
+                    <span class="badge bg-danger">HTML</span>
+                    <span class="badge bg-dark">PowerShell</span>
+                    <span class="badge bg-warning">Supabase</span>
+                    <span class="badge bg-success">In Development</span>
                 </div>
             </div>
         </div>
@@ -656,10 +593,11 @@
                 </div>
 
                 <!-- Award Modal -->
+                <!-- Award Modal -->
                 <div id="education-award2024" class="education-modal">
                     <div class="education-modal-content">
                         <!-- Modal Header -->
-                        <div class="education-modal-header text-primary">
+                        <div class="education-modal-header text-info">
                             Best Future Solution Award
                             <span class="education-close"
                                 onclick="educationCloseModal('education-award2024')">&times;</span>
@@ -697,6 +635,7 @@
                         </div>
                     </div>
                 </div>
+
 
                 <!-- Typetec Ltd -->
                 <div class="education-timeline-item education-timeline-left">
@@ -760,7 +699,7 @@
                 <div id="education-grades2023" class="education-modal">
                     <div class="education-modal-content">
                         <!-- Modal Header -->
-                        <div class="education-modal-header text-primary">
+                        <div class="education-modal-header text-info">
                             Third Year Modules (GPA: 3.48)
                             <span class="education-close"
                                 onclick="educationCloseModal('education-grades2023')">&times;</span>
@@ -814,7 +753,7 @@
                 <div id="education-grades2022" class="education-modal">
                     <div class="education-modal-content">
                         <!-- Modal Header -->
-                        <div class="education-modal-header text-primary">
+                        <div class="education-modal-header text-info">
                             Second Year Modules (GPA: 3.60)
                             <span class="education-close"
                                 onclick="educationCloseModal('education-grades2022')">&times;</span>
@@ -873,7 +812,7 @@
                 <div id="education-grades2021" class="education-modal">
                     <div class="education-modal-content">
                         <!-- Modal Header -->
-                        <div class="education-modal-header text-primary">
+                        <div class="education-modal-header text-info">
                             First Year Modules (GPA: 3.658)
                             <span class="education-close"
                                 onclick="educationCloseModal('education-grades2021')">&times;</span>

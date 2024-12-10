@@ -24,19 +24,25 @@ document.addEventListener("DOMContentLoaded", () => {
     scrollAnimations();
 });
 
-// Open Modal
+// Open Modal with Fade-In Effect
 function educationOpenModal(modalId) {
     const modal = document.getElementById(modalId);
     if (modal) {
-        modal.style.display = "block";
+        modal.style.display = "block"; // Ensure it's visible
+        modal.classList.add("fade-in");
+        modal.classList.remove("fade-out");
     }
 }
 
-// Close Modal
+// Close Modal with Fade-Out Effect
 function educationCloseModal(modalId) {
     const modal = document.getElementById(modalId);
     if (modal) {
-        modal.style.display = "none";
+        modal.classList.remove("fade-in");
+        modal.classList.add("fade-out");
+        setTimeout(() => {
+            modal.style.display = "none"; // Hide modal after fade-out completes
+        }, 300); // Match the transition duration in CSS
     }
 }
 
@@ -45,8 +51,27 @@ window.onclick = function (event) {
     const modals = document.querySelectorAll(".education-modal");
     modals.forEach(modal => {
         if (event.target === modal) {
-            modal.style.display = "none";
+            modal.classList.remove("fade-in");
+            modal.classList.add("fade-out");
+            setTimeout(() => {
+                modal.style.display = "none";
+            }, 300);
         }
     });
 };
 
+// Key Escape to Close Modal
+window.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+        const modals = document.querySelectorAll(".education-modal");
+        modals.forEach(modal => {
+            if (modal.style.display === "block") {
+                modal.classList.remove("fade-in");
+                modal.classList.add("fade-out");
+                setTimeout(() => {
+                    modal.style.display = "none";
+                }, 300);
+            }
+        });
+    }
+});
