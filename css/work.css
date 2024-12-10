@@ -119,7 +119,7 @@
     border-radius: 5px;
     text-transform: uppercase;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: background-color 0.8s ease, transform 0.8s ease;
     text-decoration: none;
 }
 
@@ -173,7 +173,7 @@
     background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
     opacity: 0; /* Start invisible */
     transform: scale(0.9); /* Slightly shrink */
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition for opacity and scale */
+    transition: opacity 0.8s ease, transform 0.8s ease; /* Smooth transition for opacity and scale */
 }
 
 /* Modal Content */
@@ -188,7 +188,7 @@
     max-width: 600px;
     width: 90%;
     z-index: 1055; /* Ensure modal is above other content */
-    transition: transform 0.3s ease; /* Smooth transformation for content */
+    transition: transform 0.8s ease; /* Smooth transformation for content */
 }
 
 /* Fade-in Effect */
@@ -335,5 +335,8 @@
         margin-left: auto; /* Overrides the desktop alignment */
         margin-right: auto; /* Centers the icon */
     }
-    
+    .education-modal-content {
+        margin: 30% auto; /* Adjust the top margin to move it lower */
+
+    }  
 }
