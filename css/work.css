@@ -311,6 +311,7 @@
 
     .education-timeline-item {
         width: 100%;
+        text-align: center; /* Center text alignment */
         left: 0 !important;
         text-align: left !important;
     }
@@ -322,6 +323,7 @@
 
     .education-timeline-content {
         margin: 0 auto !important;
+        text-align: center; /* Center the text inside */
     }
 
     .education-timeline-icon {
@@ -333,8 +335,5 @@
         margin-left: auto; /* Overrides the desktop alignment */
         margin-right: auto; /* Centers the icon */
     }
-
-    .education-modal-content {
-        margin: 30% auto; /* Centers the modal */
-    }
+    
 }
