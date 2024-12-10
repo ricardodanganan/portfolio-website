@@ -214,6 +214,9 @@
         margin-left: auto; /* Overrides the desktop alignment */
         margin-right: auto; /* Centers the icon */
     }
+    .education-modal-content {
+        margin-top: 60px; /* Adjusts modal placement below navbar */
+    }
 }
 
 /* Modal Styling */
@@ -233,13 +236,15 @@
 .education-modal-content {
     background-color: #DCDCDC; /* White background for the body */
     color: #000000; /* Dark text for the body */
-    margin: 10% auto; /* Center the modal */
-    border-radius: 10px;
+    margin: 5% auto; /* Centers the modal */
+    padding: 20px;
+    border-radius: 8px;
     overflow: hidden; /* Ensures header and body align properly */
-    width: 80%;
-    max-width: 600px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     font-family: Arial, sans-serif;
+    max-width: 600px;
+    width: 90%;
+    z-index: 1000; /* Ensure modal is above other content */
 }
 
 /* Modal Header */
