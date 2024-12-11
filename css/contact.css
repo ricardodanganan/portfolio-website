@@ -92,3 +92,11 @@
     opacity: 1;
     transform: translateY(0);
 }
+
+/* Adjust padding/margin for mobile view */
+@media (max-width: 768px) {
+    #contact {
+        align-items: center;
+        padding: 0px 35px 0px 35px;
+    }
+}

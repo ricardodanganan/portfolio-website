@@ -3,7 +3,7 @@
     background-color: #2C2C2C; /* Dark background */
     color: #ffffff; /* Light text */
     align-items: center;
-    padding: 35px 45px 35px 45px;
+    padding: 0px 100px 0px 100px;
 }
 
 .education-timeline {
@@ -308,6 +308,10 @@
 @media (max-width: 768px) {
     .education-timeline {
         padding: 20px 0;
+    }
+
+    #education-experience {
+        padding: 0px 50px 0px 50px;
     }
 
     .education-timeline-item {
