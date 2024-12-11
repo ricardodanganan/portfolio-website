@@ -6,8 +6,8 @@ body {
     background-color: #2C2C2C;
 }
 
-html, body {
-    overflow-x: hidden;
+body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Ensure all sections are responsive and fit within the viewport */
@@ -19,8 +19,7 @@ section {
 /* For better handling on smaller screens */
 .container {
     max-width: 100%; /* Ensure it doesn't exceed the screen width */
-    padding-left: 0px;
-    padding-right: 0px;
+    padding: 2px;
     margin: 0 auto;
 }
 

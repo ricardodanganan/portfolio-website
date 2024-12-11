@@ -1,46 +1,58 @@
 /* Skills Section */
 #skills {
-    background-color: #2C2C2C;
-    /* Matches the dark theme */
-    padding: 50px 0;
-    color: white;
+    background-color: #f8f9fa; /* Light background */
+    padding: 60px 15px; /* Reduce padding for compactness */
+    color: #333;
 }
 
-#skills h2 {
-    color: #1e90ff;
-    /* Blue theme for the heading */
+h2 {
+    font-size: 1.8rem; /* Slightly smaller font for compactness */
+    color: #333; /* Darker text for heading */
+    font-weight: bold;
     margin-bottom: 20px;
 }
 
-/* Skill Cards */
-.skill-card {
-    background-color: #424242;
-    /* Dark card background */
-    border: 1px solid #444;
-    /* Subtle border for the card */
-    border-radius: 10px;
-    padding: 20px;
+p {
+    font-size: 0.95rem; /* Reduce font size for compactness */
+    color: #6c757d; /* Muted text for description */
+    line-height: 1.5; /* Compact line spacing */
+    margin-bottom: 30px;
+}
+
+/* Skill Bar Styles */
+.skill-bar {
+    margin-bottom: 20px; /* Compact spacing between bars */
+}
+
+.skill-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.skill-title {
+    font-weight: bold;
+    font-size: 0.95rem; /* Slightly smaller text */
+    color: #333;
+}
+
+.skill-percentage {
+    font-weight: bold;
+    color: #007bff; /* Blue theme */
+    font-size: 0.95rem;
+}
+
+.progress-container {
+    background-color: #e0e0e0; /* Light gray for background */
+    height: 8px; /* Slightly thinner bars */
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress {
+    background-color: #007bff; /* Blue progress bar */
     height: 100%;
-    transition: transform 0.3s, box-shadow 0.3s;
+    width: 0; /* Starts at 0 for animation */
+    transition: width 1.5s ease-in-out;
 }
-
-.skill-card:hover {
-    transform: scale(1.05);
-    /* Slight scaling on hover */
-    box-shadow: 0 4px 20px rgba(30, 144, 255, 0.3);
-    /* Glowing shadow */
-}
-
-.skill-card h5 {
-    font-size: 1.2rem;
-    color: #1e90ff;
-    /* Matches the hero section accent */
-    margin-bottom: 10px;
-}
-
-.skill-card p {
-    font-size: 1rem;
-    color: #ddd;
-    /* Softer text color for descriptions */
-}
-/* End of Skills Section */
