@@ -139,18 +139,18 @@ section {
 /* Music Control Styling */
 .music-control {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 10px;
-    border-radius: 50%;
+    bottom: 0px;
+    right: 0px;
+    padding: 15px;
     cursor: pointer;
     z-index: 1000;
 }
 
 .music-icon {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     transition: transform 0.3s;
+    border-radius: 100%;
 }
 
 .music-control:hover .music-icon {
