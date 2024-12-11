@@ -1,22 +1,42 @@
 /* Arrow Up Button Styling */
 #scrollToTop {
     position: fixed;
-    bottom: 35px;
-    right: 5px;
-    padding: 15px;
-    font-size: 50px; /* Arrow size */
+    bottom: 5px; /* Moved closer to the bottom */
+    right: 70px; /* Positioned next to the music control with some spacing */
+    font-size: 40px; /* Arrow size */
     color: #ffffff; /* Arrow color */
     cursor: pointer;
-    z-index: 1000; 
+    z-index: 1000;
     display: none; /* Hidden by default */
     animation: bobbing 1s infinite; /* Bobbing animation */
-    /* make the arrow bold */
-    font-weight: bold;
+    font-weight: bold; /* Make the arrow bold */
 }
 
 /* Hover Effect */
 #scrollToTop:hover {
     color: #0051ff; /* Darker color on hover */
+}
+
+/* Music Control Styling */
+.music-control {
+    position: fixed;
+    bottom: 5px; /* Moved closer to the bottom */
+    right: 10px; /* Positioned closer to the corner */
+    padding: 15px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.music-icon {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+    border-radius: 100%;
+}
+
+.music-control:hover .music-icon {
+    transform: scale(1.2);
+    /* Slight zoom effect on hover */
 }
 
 /* Bobbing Animation */
@@ -26,5 +46,23 @@
     }
     50% {
         transform: translateY(-10px); /* Move up slightly */
+    }
+}
+
+/* Responsive Adjustments for Smaller Screens */
+@media (max-width: 768px) {
+    #scrollToTop {
+        bottom: 2px; /* Ensure the buttons stay low */
+        right: 50px; /* Consistent spacing */
+        font-size: 35px; /* Adjust size for smaller screens */
+    }
+
+    .music-control {
+        bottom: 2px; /* Ensure the buttons stay low */
+        right: 2px; /* Keep in the corner */
+    }
+    .music-icon {
+        width: 30px;
+        height: 30px;
     }
 }

@@ -135,27 +135,3 @@ section {
 }
 
 /* End of Line Between Sections */
-
-/* Music Control Styling */
-.music-control {
-    position: fixed;
-    bottom: 0px;
-    right: 0px;
-    padding: 15px;
-    cursor: pointer;
-    z-index: 1000;
-}
-
-.music-icon {
-    width: 40px;
-    height: 40px;
-    transition: transform 0.3s;
-    border-radius: 100%;
-}
-
-.music-control:hover .music-icon {
-    transform: scale(1.2);
-    /* Slight zoom effect on hover */
-}
-
-/* End of Music Control Styling */
