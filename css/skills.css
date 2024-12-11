@@ -1,7 +1,7 @@
 /* Skills Section */
 #skills {
     background-color: #DCDCDC; /* Light background */
-    padding: 95px 75px 95px 75px; /* Reduce padding for compactness */
+    padding: 110px 235px 110px 235px; /* Reduce padding for compactness */
     color: #333;
 }
 
@@ -43,4 +43,9 @@
     transition: width 0.5s ease-in-out; /* Smooth animation */
 }
 
-
+/* adjust for mobile */
+@media (max-width: 768px) {
+    #skills {
+        padding: 75px 70px 75px 70px; /* Reduce horizontal padding */
+    }
+}
