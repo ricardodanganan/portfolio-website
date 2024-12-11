@@ -2,8 +2,8 @@
 #scrollToTop {
     position: fixed;
     bottom: 5px; /* Moved closer to the bottom */
-    right: 70px; /* Positioned next to the music control with some spacing */
-    font-size: 40px; /* Arrow size */
+    right: 80px; /* Positioned next to the music control with some spacing */
+    font-size: 55px; /* Arrow size */
     color: #ffffff; /* Arrow color */
     cursor: pointer;
     z-index: 1000;
@@ -53,8 +53,8 @@
 @media (max-width: 768px) {
     #scrollToTop {
         bottom: 2px; /* Ensure the buttons stay low */
-        right: 50px; /* Consistent spacing */
-        font-size: 35px; /* Adjust size for smaller screens */
+        right: 60px; /* Consistent spacing */
+        font-size: 45px; /* Adjust size for smaller screens */
     }
 
     .music-control {
