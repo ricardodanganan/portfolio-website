@@ -1,22 +1,8 @@
 /* Skills Section */
 #skills {
-    background-color: #f8f9fa; /* Light background */
-    padding: 60px 15px; /* Reduce padding for compactness */
+    background-color: #DCDCDC; /* Light background */
+    padding: 95px 75px 95px 75px; /* Reduce padding for compactness */
     color: #333;
-}
-
-h2 {
-    font-size: 1.8rem; /* Slightly smaller font for compactness */
-    color: #333; /* Darker text for heading */
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-p {
-    font-size: 0.95rem; /* Reduce font size for compactness */
-    color: #6c757d; /* Muted text for description */
-    line-height: 1.5; /* Compact line spacing */
-    margin-bottom: 30px;
 }
 
 /* Skill Bar Styles */
@@ -43,7 +29,7 @@ p {
 }
 
 .progress-container {
-    background-color: #e0e0e0; /* Light gray for background */
+    background-color: #ffffff; /* Light gray for background */
     height: 8px; /* Slightly thinner bars */
     border-radius: 5px;
     overflow: hidden;
