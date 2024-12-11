@@ -2,7 +2,7 @@
 #scrollToTop {
     position: fixed;
     bottom: 80px; 
-    right: 35px;
+    right: 37px;
     font-size: 50px; /* Arrow size */
     color: #ffffff; /* Arrow color */
     cursor: pointer;
