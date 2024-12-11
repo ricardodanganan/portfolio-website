@@ -10,6 +10,8 @@
     z-index: 1000; 
     display: none; /* Hidden by default */
     animation: bobbing 1s infinite; /* Bobbing animation */
+    /* make the arrow bold */
+    font-weight: bold;
 }
 
 /* Hover Effect */
