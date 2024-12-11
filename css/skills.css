@@ -22,12 +22,6 @@
     color: #333;
 }
 
-.skill-percentage {
-    font-weight: bold;
-    color: #007bff; /* Blue theme */
-    font-size: 0.95rem;
-}
-
 .progress-container {
     background-color: #ffffff; /* Light gray for background */
     height: 8px; /* Slightly thinner bars */
@@ -36,9 +30,17 @@
     position: relative;
 }
 
-.progress {
-    background-color: #007bff; /* Blue progress bar */
-    height: 100%;
-    width: 0; /* Starts at 0 for animation */
-    transition: width 1.5s ease-in-out;
+.skill-percentage {
+    font-weight: bold;
+    color: #007bff; /* Matches the bar color */
+    font-size: 0.95rem;
 }
+
+.progress {
+    background-color: #007bff; /* Blue color */
+    height: 100%;
+    width: 0; /* Always starts at 0 */
+    transition: width 0.5s ease-in-out; /* Smooth animation */
+}
+
+
