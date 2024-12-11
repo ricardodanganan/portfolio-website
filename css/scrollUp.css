@@ -1,0 +1,27 @@
+/* Arrow Up Button Styling */
+#scrollToTop {
+    position: fixed;
+    bottom: 80px; 
+    right: 38px;
+    font-size: 50px; /* Arrow size */
+    color: #ffffff; /* Arrow color */
+    cursor: pointer;
+    z-index: 1000; 
+    display: none; /* Hidden by default */
+    animation: bobbing 1s infinite; /* Bobbing animation */
+}
+
+/* Hover Effect */
+#scrollToTop:hover {
+    color: #0051ff; /* Darker color on hover */
+}
+
+/* Bobbing Animation */
+@keyframes bobbing {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Move up slightly */
+    }
+}
