@@ -3,22 +3,31 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     /* Default font family */
     line-height: 1.6;
-    background-color: #DCDCDC;
-}
-
-main {
-    padding: 0px;
+    background-color: #2C2C2C;
 }
 
 html, body {
-    overflow-x: hidden; /* Disable horizontal scrolling */ 
-    max-width: 100%; /* Prevent elements from exceeding the viewport width */   
+    overflow-x: hidden;
+}
+
+/* Ensure all sections are responsive and fit within the viewport */
+section {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* For better handling on smaller screens */
+.container {
+    max-width: 100%; /* Ensure it doesn't exceed the screen width */
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0 auto;
 }
 
 /* General Animation Styles for Scroll Effects */
 .scroll-element {
     opacity: 0;
-    transform: translateY(135px); /* Start a bit lower */
+    transform: translateY(130px); /* Start a bit lower */
     transition: opacity 0.7s ease-out, transform 0.7s ease-out;
 }
 

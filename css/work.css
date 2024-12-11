@@ -2,7 +2,8 @@
 #education-experience {
     background-color: #2C2C2C; /* Dark background */
     color: #ffffff; /* Light text */
-    padding: 50px 0;
+    align-items: center;
+    padding: 35px 55px 35px 55px;
 }
 
 .education-timeline {

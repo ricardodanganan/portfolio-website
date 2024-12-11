@@ -2,7 +2,8 @@
 #projects {
     background-color: #2C2C2C;
     /* Dark background matching the hero section */
-    padding: 50px 0;
+    align-items: center;
+    padding: 75px 40px 75px 40px;
     color: #DCDCDC;
 }
 .card {
