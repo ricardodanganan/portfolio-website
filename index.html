@@ -10,6 +10,9 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/hero.css">
@@ -22,6 +25,7 @@
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/scrollUp.css">
+    <link rel="stylesheet" href="css/map.css">
 </head>
 
 <body>
@@ -648,6 +652,11 @@
                                 onclick="educationOpenModal('education-award2024')">
                                 View Awards
                             </button>
+                            <!-- Button to Trigger the Map Modal -->
+                            <button class="education-timeline-button"
+                                onclick="openMapModal(53.2911, -6.3635, '<b>Technological University Dublin</b><br>Blessington Rd, Tallaght, Dublin 24, D24 FKT9')">
+                                Location
+                            </button>
                         </div>
                     </div>
 
@@ -712,6 +721,11 @@
                             <a href="https://www.typetec.ie//" target="_blank" class="education-timeline-button">
                                 Learn More
                             </a>
+                            <!-- Button to Trigger the Map Modal -->
+                            <button class="education-timeline-button"
+                                onclick="openMapModal(53.3131, -6.3433, '<b>Typetec Ltd</b><br>Unit G6, Calmount Park, Calmount Ave, Ballymount, Dublin 12, D12 XW25')">
+                                Location
+                            </button>
                         </div>
                     </div>
 
@@ -728,6 +742,11 @@
                             <a href="https://www.kkr.com/" target="_blank" class="education-timeline-button">
                                 Learn More
                             </a>
+                            <!-- Button to Trigger the Map Modal -->
+                            <button class="education-timeline-button"
+                                onclick="openMapModal(53.3330, -6.2584, '<b>KKR Dublin</b><br>19/20 Earlsfort Terrace, Saint Kevin\'s, Dublin, 2')">
+                                Location
+                            </button>
                         </div>
                     </div>
 
@@ -750,7 +769,12 @@
                             </a>
                             <button class="education-timeline-button"
                                 onclick="educationOpenModal('education-grades2023')">
-                                View Grades
+                                Grades
+                            </button>
+                            <!-- Button to Trigger the Map Modal -->
+                            <button class="education-timeline-button"
+                                onclick="openMapModal(53.2911, -6.3635, '<b>Technological University Dublin</b><br>Blessington Rd, Tallaght, Dublin 24, D24 FKT9')">
+                                Location
                             </button>
                         </div>
                     </div>
@@ -806,7 +830,12 @@
                             </a>
                             <button class="education-timeline-button"
                                 onclick="educationOpenModal('education-grades2022')">
-                                View Grades
+                                Grades
+                            </button>
+                            <!-- Button to Trigger the Map Modal -->
+                            <button class="education-timeline-button"
+                                onclick="openMapModal(53.2911, -6.3635, '<b>Technological University Dublin</b><br>Blessington Rd, Tallaght, Dublin 24, D24 FKT9')">
+                                Location
                             </button>
                         </div>
                     </div>
@@ -868,7 +897,12 @@
                             </a>
                             <button class="education-timeline-button"
                                 onclick="educationOpenModal('education-grades2021')">
-                                View Grades
+                                Grades
+                            </button>
+                            <!-- Button to Trigger the Map Modal -->
+                            <button class="education-timeline-button"
+                                onclick="openMapModal(53.2911, -6.3635, '<b>Technological University Dublin</b><br>Blessington Rd, Tallaght, Dublin 24, D24 FKT9')">
+                                Location
                             </button>
                         </div>
                     </div>
@@ -925,6 +959,11 @@
                             <a href="https://www.bife.ie/" target="_blank" class="education-timeline-button">
                                 Learn More
                             </a>
+                            <!-- Button to Trigger the Map Modal -->
+                            <button class="education-timeline-button"
+                                onclick="openMapModal(53.2008, -6.1067, '<b>BIFE</b><br>Novara Ave, Bray, Co. Wicklow, A98 ND89')">
+                                Location
+                            </button>
                         </div>
                     </div>
 
@@ -943,6 +982,11 @@
                             <a href="https://www.currys.ie/" target="_blank" class="education-timeline-button">
                                 Learn More
                             </a>
+                            <!-- Button to Trigger the Map Modal -->
+                            <button class="education-timeline-button"
+                                onclick="openMapModal(53.250419702403796, -6.184880601795632, '<b>Currys Carrickmines</b><br>Unit 9, The Park, Carrickmines Great, Dublin, D18 DP23')">
+                                Location
+                            </button>
                         </div>
                     </div>
 
@@ -962,10 +1006,15 @@
                             <a href="https://www.bife.ie/" target="_blank" class="education-timeline-button">
                                 Learn More
                             </a>
+                            <!-- Button to Trigger the Map Modal -->
+                            <button class="education-timeline-button"
+                                onclick="openMapModal(53.2008, -6.1067, '<b>BIFE</b><br>Novara Ave, Bray, Co. Wicklow, A98 ND89')">
+                                Location
+                            </button>
                         </div>
                     </div>
 
-                    <!-- Currys -->
+                    <!-- First Care -->
                     <div class="education-timeline-item education-timeline-left">
                         <div class="education-timeline-content">
                             <div class="education-timeline-date">2012</div>
@@ -979,11 +1028,25 @@
                             <p>Communications and Team Work</p>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
         <!-- End of Education and Work Experience Section -->
+
+        <!-- Map Modal -->
+        <div id="mapModal" class="education-modal">
+            <div class="education-modal-content">
+                <!-- Modal Header -->
+                <div class="education-modal-header text-info">
+                    Location Map
+                    <span class="education-close" id="closeMapModal">&times;</span>
+                </div>
+                <!-- Modal Body -->
+                <div class="education-modal-body">
+                    <div id="map" class="map-container"></div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Contact Section -->
@@ -1034,6 +1097,8 @@
     </section>
     <!-- End of Contact Section -->
 
+
+
     <!-- Footer Section -->
     <footer id="footer" class="py-4">
         <div class="container text-center">
@@ -1053,6 +1118,35 @@
             </div>
         </div>
     </footer>
+
+
+    <!-- Modal -->
+    <div id="map-modal" class="map-modal">
+        <div class="map-modal-content">
+            <span id="map-close-modal" class="map-close">&times;</span>
+            <h2>Choose a Location</h2>
+            <ul></ul> <!-- Dynamically populated by JavaScript -->
+        </div>
+    </div>
+
+
+    <!-- Map Container -->
+    <div id="map" style="height: 500px; width: 100%;"></div>
+
+    <!-- Modal -->
+    <div id="map-modal" class="map-modal">
+        <div class="map-modal-content">
+            <span id="map-close-modal" class="map-close">&times;</span>
+            <h2>Choose a Location</h2>
+            <ul>
+                <li><button class="map-location-btn" data-lat="51.505" data-lng="-0.09">London</button></li>
+                <li><button class="map-location-btn" data-lat="40.7128" data-lng="-74.0060">New York</button></li>
+                <li><button class="map-location-btn" data-lat="48.8566" data-lng="2.3522">Paris</button></li>
+                <li><button class="map-location-btn" data-lat="35.6895" data-lng="139.6917">Tokyo</button></li>
+            </ul>
+        </div>
+    </div>
+
 
     <!-- Scroll Up Button -->
     <!-- Arrow Up Button -->
@@ -1082,6 +1176,8 @@
     <script src="js/skills.js"></script>
     <script src="js/contact.js"></script>
     <script src="js/scrollUp.js"></script>
+    <script src="js/maps.js"></script>
+    <script src="js/openMapModal.js"></script>
 </body>
 
 </html>
