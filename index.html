@@ -161,10 +161,8 @@
                         Hobbies & Interests
                     </button>
 
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                        data-bs-target="#cvViewerModal">
-                        View My CV
-                    </button>
+                    <!-- View CV Button -->
+                    <button class="btn btn-primary" onclick="openCVViewer()">View My CV</button>
 
                     <!-- Download CV Button -->
                     <a href="CV/Ricardo_Danganan_Jnr_CV.pdf" class="cv" download>Download My CV</a>
@@ -173,19 +171,22 @@
         </section>
 
         <!-- Modal for CV Viewer -->
-        <div class="modal fade" id="cvViewerModal" tabindex="-1" aria-labelledby="cvViewerModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="cvViewerModalLabel">View My CV</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div id="cvViewerModal" class="cv-modal">
+            <div class="cv-modal-content">
+                <!-- Modal Header -->
+                <div class="cv-modal-header">
+                    View My CV
+                    <span class="cv-close" onclick="closeCVViewer()">&times;</span>
+                </div>
+                <!-- Modal Body -->
+                <div class="cv-modal-body">
+                    <!-- Fallback Download Link for Mobile -->
+                    <div id="cvFallback">
+                        <p>Your browser doesn't support viewing the CV inline.</p>
+                        <a href="CV/Ricardo_Danganan_Jnr_CV.pdf" class="btn btn-primary" download>Download My CV</a>
                     </div>
-                    <div class="modal-body">
-                        <!-- PDF Viewer -->
-                        <iframe src="CV/Ricardo_Danganan_Jnr_CV.pdf"
-                            style="width: 100%; height: 500px; border: none;"></iframe>
-                    </div>
+                    <!-- PDF Viewer -->
+                    <iframe id="cvViewerIframe"></iframe>
                 </div>
             </div>
         </div>
