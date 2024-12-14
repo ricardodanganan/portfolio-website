@@ -9,7 +9,7 @@ function openCVViewer() {
     if (isMobile) {
         // Show fallback for mobile
         iframe.style.display = "none";
-        fallback.style.display = "block";
+        fallback.style.display = "flex"; // Use flex for centering
     } else {
         // Show iframe for desktop
         iframe.src = "CV/Ricardo_Danganan_Jnr_CV.pdf";

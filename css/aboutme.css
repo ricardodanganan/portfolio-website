@@ -267,3 +267,22 @@
     height: 100%;
     border: none; /* No border for the iframe */
 }
+
+#cvFallback {
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    height: 100%; /* Take full modal height */
+    padding: 20px; /* Add some padding for better spacing */
+    text-align: center; /* Ensure text is centered */
+}
+
+#cvFallback p {
+    font-size: 1rem; /* Adjust text size for readability */
+    margin-bottom: 15px; /* Add spacing below the paragraph */
+}
+
+#cvFallback a {
+    font-size: 1.1rem; /* Slightly larger button text */
+}
