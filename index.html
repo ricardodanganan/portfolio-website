@@ -160,11 +160,29 @@
                         onclick="educationOpenModal('education-hobbiesModal')">
                         Hobbies & Interests
                     </button>
+                
+                    <!-- View CV Button -->
+                    <button class="btn btn-primary" onclick="openCVViewer()">View My CV</button>
+
                     <!-- Download CV Button -->
                     <a href="CV/Ricardo_Danganan_Jnr_CV.pdf" class="cv" download>Download My CV</a>
                 </div>
             </div>
         </section>
+        <!-- Modal for CV Viewer -->
+        <div id="cvViewerModal" class="cv-modal">
+            <div class="cv-modal-content">
+                <!-- Modal Header -->
+                <div class="cv-modal-header text-primary">
+                    View My CV
+                    <span class="cv-close" onclick="closeCVViewer()">&times;</span>
+                </div>
+                <!-- Modal Body -->
+                <div class="cv-modal-body">
+                    <iframe id="cvViewerIframe" src="" style="width: 100%; height: 100%; border: none;"></iframe>
+                </div>
+            </div>
+        </div>
 
         <!-- Hobbies & Interests Modal -->
         <div id="education-hobbiesModal" class="education-modal">
