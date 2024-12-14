@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/scrollUp.css">
     <link rel="stylesheet" href="css/map.css">
+    <link rel="stylesheet" href="css/time.css">
 </head>
 
 <body>
@@ -39,11 +40,13 @@
                         <i class="fas fa-bars me-1"></i>
                     </button>
                 </div>
+
                 <div class="navbar-flex3 text-center" id="navbar-siteBrand">
                     <a href="#hero" id="navbar-logoLink">
                         <img src="/img/RD-2.png" alt="Ricardo Danganan Logo" id="navbar-logo">
                     </a>
                 </div>
+
                 <div class="navbar-flex2 text-end">
                     <button class="navbar-blackLink navbar-siteLink"
                         onclick="educationOpenModal('education-contactModal')">
@@ -119,6 +122,9 @@
     <header id="hero" class="d-flex align-items-center"
         style="background: url('./img/Hero-Logo-6.jpg') no-repeat center center; background-size: cover;">
         <div class="container text-center">
+            <!-- Dynamic Greeting -->
+            <h3 id="dynamic-greeting" class="fw-bold text-light" style="margin-bottom: 10px;"></h3>
+            <!-- Title and Subtitle -->
             <h1 class="fw-bold text-light">Hi, I'm <span class="highlight">Ricardo Danganan</span></h1>
             <p class="sub-title">
                 <span id="animated-text" class="highlight-alt"></span>
@@ -130,7 +136,6 @@
     </header>
     <!-- End of Hero Section -->
 
-
     <div class="container">
         <!-- Parallax Separator -->
         <div id="about-section" class="parallax-separator">
@@ -140,6 +145,7 @@
         <section id="about" class="py-7 scroll-element">
             <div>
                 <img src="img/Personal-Image-1.jpg" alt="Profile Picture" class="about-img scroll-element">
+                <div id="time-container" style="font-size: 17px; font-weight: bold;"></div>
                 <div class="about-socials">
                     <a href="https://github.com/ricardodanganan" target="_blank"><i class="bi bi-github"></i></a>
                     <a href="https://linkedin.com/in/ricardo-danganan-jnr" target="_blank"><i
@@ -1181,6 +1187,7 @@
     <script src="js/scrollUp.js"></script>
     <script src="js/maps.js"></script>
     <script src="js/openMapModal.js"></script>
+    <script src="js/time.js"></script>
 </body>
 
 </html>
