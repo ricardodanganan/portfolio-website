@@ -1,9 +1,21 @@
 function openCVViewer() {
     const modal = document.getElementById("cvViewerModal");
     const iframe = document.getElementById("cvViewerIframe");
+    const fallback = document.getElementById("cvFallback");
 
-    // Set the iframe's source to the CV file
-    iframe.src = "CV/Ricardo_Danganan_Jnr_CV.pdf";
+    // Detect if the user is on mobile
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+    if (isMobile) {
+        // Show fallback for mobile
+        iframe.style.display = "none";
+        fallback.style.display = "block";
+    } else {
+        // Show iframe for desktop
+        iframe.src = "CV/Ricardo_Danganan_Jnr_CV.pdf";
+        iframe.style.display = "block";
+        fallback.style.display = "none";
+    }
 
     // Show the modal
     modal.style.display = "block";
@@ -20,7 +32,7 @@ function closeCVViewer() {
     modal.classList.add("fade-out");
     setTimeout(() => {
         modal.style.display = "none";
-        iframe.src = ""; // Clear the iframe source
+        iframe.src = ""; // Clear iframe src for performance
     }, 300);
 }
 
