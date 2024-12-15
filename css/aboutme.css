@@ -225,9 +225,9 @@
 /* Modal Content */
 .cv-modal-content {
     background-color: #ffffff;
-    margin: 0 auto;
-    width: 90%;
-    height: 90%;
+    margin: 6% auto; /* Center modal vertically and horizontally */
+    width: 70%;
+    height: 80%;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
