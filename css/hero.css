@@ -17,7 +17,7 @@
 }
 
 #hero .highlight {
-    color: #1e90ff;
+    color: #0085cc;
 }
 
 #hero .sub-title {
@@ -28,7 +28,7 @@
 
 /* Animated Text Styling */
 #animated-text {
-    color: #00aaff; /* Blue text */
+    color: #0085cc; /* Blue text */
     font-size: 1.5rem;
     opacity: 0; /* Start hidden */
     transition: opacity 1s ease-in-out; /* Smooth fade transition */
