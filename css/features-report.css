@@ -1,0 +1,149 @@
+body {
+    background-color: #2C2C2C; /* Changed to light background */
+    font-family: 'Verdana', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header nav {
+    background-color: #0077b5; /* Blue navbar for contrast with light background */
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header nav a {
+    color: #DCDCDC; /* White text for navbar links */
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+header nav a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.feature-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ebebeb; /* Changed container to white */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lighter shadow for softer look */
+}
+
+h1, h2, h3 {
+    color: #0077b5; /* Keep headers blue for consistency */
+}
+
+article {
+    background-color: #DCDCDC; /* Light gray for articles to create subtle separation */
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #E0E0E0; /* Added a soft border for definition */
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #333; /* Dark text for better readability */
+}
+
+ul ul {
+    list-style-type: circle;
+    padding-left: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: #0077b5; /* Blue footer for contrast */
+    padding: 10px 0;
+    color: #FFFFFF; /* White text in footer */
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* General Animation Styles for Scroll Effects */
+.scroll-element {
+    opacity: 0;
+    transform: translateY(130px);
+    /* Start a bit lower */
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.scroll-element.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* End of Animation Styles for Scroll Effects*/
+
+/* Parallax Separator */
+.parallax-separator {
+    background-image: url('../img/wallpaper-2.jpg');
+    height: 250px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    /* Center the title horizontally */
+    justify-content: center;
+    align-items: center;
+    /* Center the title vertically */
+}
+
+/* Optional: Overlay to darken or lighten the parallax section */
+.parallax-separator::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Add a dark overlay (adjust opacity as needed) */
+    z-index: 2;
+}
+
+/* Parallax Title */
+.parallax-title {
+    position: relative;
+    z-index: 3;
+    /* Ensure it appears above the overlay */
+    font-size: 2rem;
+    /* Adjust size as needed */
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    /* Remove underline from the link */
+    padding: 10px 20px;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    /* Optional: Add a border for emphasis */
+    border-radius: 5px;
+    /* Rounded corners */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Optional: Semi-transparent background */
+    transition: all 0.3s ease;
+    /* Smooth transition for hover effects */
+}
+
+/* Hover Effect for Parallax Title */
+.parallax-title:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Invert background on hover */
+    color: #000;
+    /* Change text color to black */
+    border-color: #000;
+    /* Match border with text color */
+    transform: scale(1.1);
+    /* Slight enlargement */
+}
+
+/* End of Parallax Separator */
