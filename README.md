@@ -2,8 +2,8 @@
 
 ## Table of Contents
 1. [Introduction](#Introduction)
-2. [Bootstrap] (#Features)
-3. [Dynamic] (#Content)
+2. [Bootstrap Features] (#Bootstrap-Features)
+3. [Dynamic Content] (#Dynamic-Content)
 4. [Accessibility](#Accessibility)
 5. [Performance Observations](#Performance-Observations)
 6. [Design Consistency](#Design-Consistency)
