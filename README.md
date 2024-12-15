@@ -33,7 +33,7 @@ This is my portfolio website, which is a complete showcase of my skills, project
 - Footer: Hovering over the social media icons in the footer changes their color to the website or brand's specific color.
 - Time Feature: Show a live clock giving us current time in HH:MM:SS format. And a greeting message (“Good Morning,” “Good Afternoon,” “Good Evening”) depending on the time of the day.
 - Scroll-to-Top Button: Comes into view on dynamic scrolling. So this smoothly scrolls the page to the top.
-- Background Music: Play background music automatically on load (with fallback for broken browsers). An icon that toggles between play/pause, visually.
+- Background Music: Play background music (with fallback for broken browsers). An icon that toggles between play/pause, visually.
 - Map Integration: Provides an interactive map integrated with fetch API in OpenStreetMap that pinpoints my work experience location.
 
 ## Accessibility
