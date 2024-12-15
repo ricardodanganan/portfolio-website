@@ -52,7 +52,7 @@
 }
 
 .contact-button {
-    background-color: #1e90ff; /* Blue button */
+    background-color: #0077b5; /* Blue button */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -61,7 +61,7 @@
 }
 
 .contact-button:hover {
-    background-color: #1472c4; /* Darker blue on hover */
+    background-color: #0088ff; /* Darker blue on hover */
     transform: scale(1.05); /* Slight scaling effect */
 }
 

@@ -122,12 +122,17 @@
 }
 
 .about-buttons .btn-primary:hover {
-    background-color: #005582; /* Darker LinkedIn blue for hover */
+    background-color: #0088ff; /* Darker LinkedIn blue for hover */
     color: #fff; /* Ensure text remains white */
     transform: scale(1.1); /* Slightly enlarge on hover */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4); /* Add a subtle shadow effect */
 }
 
+.about-buttons a.cv:hover{
+    background-color: #0088ff;
+    color: #fff;
+    transform: scale(1.1);
+}
 
 /* Hobbies Modal Customization */
 #hobbiesModal .modal-content {
@@ -238,7 +243,7 @@
     padding: 10px;
     font-size: 18px;
     font-weight: bold;
-    background-color: #007bff; /* Blue header background */
+    background-color: #0077b5; /* Blue header background */
     color: #fff; /* White text for the header */
     display: flex;
     justify-content: space-between;

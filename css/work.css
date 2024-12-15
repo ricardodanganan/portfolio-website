@@ -116,7 +116,7 @@
     font-size: 0.9rem;
     font-weight: bold;
     color: #ffffff;
-    background-color: #007bff;
+    background-color: #0077b5;
     border: none;
     border-radius: 5px;
     text-transform: uppercase;
@@ -127,7 +127,7 @@
 
 .education-timeline-button:hover,
 .education-close-btn:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #0088ff; /* Darker blue on hover */
     transform: scale(1.05); /* Slightly enlarge button on hover */
 }
 
