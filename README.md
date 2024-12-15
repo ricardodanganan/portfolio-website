@@ -2,8 +2,8 @@
 
 ## Table of Contents
 1. [Introduction](#Introduction)
-2. [Bootstrap Features] (#Bootstrap-Features)
-3. [Dynamic Content] (#Dynamic-Content)
+2. [Bootstrap Features](#Bootstrap-Features)
+3. [Dynamic Content](#Dynamic-Content)
 4. [Accessibility](#Accessibility)
 5. [Performance Observations](#Performance-Observations)
 6. [Design Consistency](#Design-Consistency)
@@ -13,12 +13,8 @@
 This is my portfolio website, which is a complete showcase of my skills, projects, and professional journey. It is built with modern web development principles in mind, and utilizing responsive design, interactive functionality and accessibility to maximize the user experience. The site combines different Bootstrap and custom JavaScript components to form a thorough and professional website. This report will provide an overview of the major features and functionality I have incorporated into my portfolio website, detailed breakdowns of dynamic content, Bootstrap components and extra features such as the time feature and contact form functionality etc.
 
 ## Bootstrap Features
-1. Responsive Layout:
-Media queries are used to add style for different devices in order to enable a mobile-first approach for the website.
-Percentage-based widths and responsive utilities enable uniform layout across devices.
-2. Components:
+- Responsive Layout: Media queries are used to add style for different devices in order to enable a mobile-first approach for the website.Percentage-based widths and responsive utilities enable uniform layout across devices.
 - Navbar: A sticky navbar in the top of the viewport for accessibility.Has an overlay drawer menu that slides in using JavaScript dynamic control.Fully compatible and responsive on mobile desktop.
-
 - Hero Section: A visually appealing fullscreen splash section with fading text animation.Smooth scrolling navigation to direct users to the next section in the webpage.
 - Card Components: Implemented in Projects Section which uses hover that magnify the cards and add box shadows to the cards when mouse is hovered over.
 - Buttons: Using a Bootstrap conventions for styling the primary and secondary action buttons (with hover effects).
