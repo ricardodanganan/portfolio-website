@@ -295,7 +295,7 @@
 /* mobile */
 @media (max-width: 767px) {
     .cv-modal-content {
-        margin: 20% auto; /* Center modal vertically and horizontally */
+        margin: 35% auto; /* Center modal vertically and horizontally */
     width: 50%;
     height: 35%;
     }
