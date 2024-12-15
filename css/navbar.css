@@ -173,9 +173,10 @@ select.navbar-noStyle {
 }
 
 .confirmation-content {
-    background: #00c8ff;
+    background: #0085cc;
     padding: 20px 30px;
     border-radius: 8px;
+    font-size: 1rem;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
