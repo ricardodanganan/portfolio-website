@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,6 +28,7 @@
     <link rel="stylesheet" href="css/time.css">
     <link rel="stylesheet" href="css/features-report.css">
 </head>
+
 <body>
     <!-- Navbar -->
     <div id="navbar-menuHolder">
@@ -64,7 +66,8 @@
             </div>
             <div>
                 <a href="index.html" class="navbar-nav-menu-item"><i class="fas fa-home me-3"></i>Home</a>
-                <a href="#about-section" class="navbar-nav-menu-item"><i class="fas fa-file-alt me-3"></i>Portfolio Features Report</a>
+                <a href="#about-section" class="navbar-nav-menu-item"><i class="fas fa-file-alt me-3"></i>Portfolio
+                    Features Report</a>
             </div>
         </div>
         <div id="navbar-overlay" onclick="closeMenu()"></div> <!-- Added overlay -->
@@ -112,7 +115,7 @@
 
     <!-- Hero Section -->
     <header id="hero" class="d-flex align-items-center"
-        style="background: url('./img/Hero-Logo-6.jpg') no-repeat center center; background-size: cover;">
+        style="background: url('./img/Hero-Logo-5.jpg') no-repeat center center; background-size: cover;">
         <div class="container text-center">
             <!-- Dynamic Greeting -->
             <h3 id="dynamic-greeting" class="fw-bold text-light" style="margin-bottom: 10px;"></h3>
@@ -141,7 +144,17 @@
             <article>
                 <h2>Introduction</h2>
                 <p>
-                    My portfolio website is a comprehensive showcase of my skills, projects, and professional journey. Designed with a focus on modern web development standards, it leverages responsive design, dynamic interactivity, and accessibility to ensure an engaging user experience. The site integrates various features powered by Bootstrap and custom JavaScript, creating a professional and functional online presence. This report outlines the key features and functionalities implemented in my portfolio website, including detailed analyses of dynamic content, Bootstrap components, and additional enhancements such as the time feature and contact form functionality.
+                    This is my portfolio website, which is a complete showcase of my skills, projects, and professional
+                    journey.
+                    It is built with modern web development principles in mind, and utilizing responsive design,
+                    interactive functionality
+                    and accessibility to maximize the user experience. The site combines different Bootstrap and custom
+                    JavaScript components
+                    to form a thorough and professional website. This report will provide an overview of the major
+                    features and functionality
+                    I have incorporated into my portfolio website, detailed breakdowns of dynamic content, Bootstrap
+                    components and extra features
+                    such as the time feature and contact form functionality etc.
                 </p>
             </article>
 
@@ -153,78 +166,110 @@
                 <ul>
                     <li><strong>Responsive Layout:</strong></li>
                     <ul>
-                        <li>The website utilizes media queries to adapt content for different screen sizes, ensuring a mobile-first design approach.</li>
-                        <li>Percentage-based widths and responsive utilities provide a consistent layout across devices.</li>
+                        <li>Media queries are used to add style for different devices in order to enable a mobile-first
+                            approach for the website.</li>
+                        <li>Percentage-based widths and responsive utilities enable uniform layout across devices.</li>
                     </ul>
                     <li><strong>Components:</strong></li>
                     <ul>
                         <li><strong>Navbar:</strong></li>
                         <ul>
-                            <li>A fixed navigation bar at the top of the viewport for easy access.</li>
-                            <li>Includes a sliding drawer menu with overlay, controlled dynamically via JavaScript.</li>
-                            <li>Fully responsive for mobile and desktop users.</li>
+                            <li>A sticky navbar in the top of the viewport for accessibility.</li>
+                            <li>Has an overlay drawer menu that slides in using JavaScript dynamic control.</li>
+                            <li>Fully compatible and responsive on mobile & desktop.</li>
                         </ul>
                         <li><strong>Hero Section:</strong></li>
                         <ul>
-                            <li>A visually appealing full-height splash section featuring text animations with fading transitions.</li>
-                            <li>Smooth scrolling navigation to guide users to the next section.</li>
+                            <li>A visually appealing fullscreen splash section with fading text animation.</li>
+                            <li>Smooth scrolling navigation to direct users to the next section in the webpage.</li>
                         </ul>
                         <li><strong>Card Components:</strong></li>
                         <ul>
-                            <li>Used in the Projects section, featuring hover effects that enlarge the cards and add shadows for interaction.</li>
+                            <li>Implemented in Projects Section which uses hover that magnify the cards and add box
+                                shadows to the cards when mouse is hovered over.</li>
                         </ul>
                         <li><strong>Buttons:</strong></li>
                         <ul>
-                            <li>Styled with Bootstrap conventions for primary and secondary actions, including hover effects.</li>
+                            <li>Using a Bootstrap conventions for styling the primary and secondary action buttons (with
+                                hover effects).</li>
                         </ul>
                         <li><strong>Modals:</strong></li>
                         <ul>
-                            <li>Interactive modals used for CV viewing and timeline details, with smooth fade-in/out animations for enhanced user experience.</li>
+                            <li>Modal interactions used to display several informations such as projects, locations,
+                                grades etc, incorporate transitions on fade in and fade out for optimal UX.</li>
                         </ul>
                         <li><strong>Utilities:</strong></li>
                         <ul>
-                            <li><strong>Typography:</strong> Consistent use of font-size, font-weight, and color properties ensures readability. Includes a dynamic greeting feature that updates based on the time of day.</li>
-                            <li><strong>Icons:</strong> Social media and navigation icons styled with Bootstrap and custom hover effects.</li>
+                            <li><strong>Typography:</strong> Ensure readability with consistent use of font-size,
+                                font-weight and color properties. Features a time-ranged greeting based on the time of
+                                day.</li>
+                            <li><strong>Icons:</strong> Custom social media and navigation icons using Boostrap styling
+                                and hover effects.</li>
                         </ul>
                     </ul>
                 </ul>
 
                 <h3>2. Dynamic Content</h3>
                 <ul>
-                    <li><strong>Hero Section:</strong> Features dynamic text cycling through phrases such as “4th Year Computing Student” and “IT Management.” Smooth scrolling implemented via JavaScript for seamless navigation.</li>
-                    <li><strong>About Me:</strong> A modal viewer displays my CV, providing a fallback display for mobile devices. Interactive functionality ensures a polished presentation of professional details.</li>
-                    <li><strong>Projects:</strong> Includes project cards with hover animations for enhanced interactivity. Features an image carousel for project previews.</li>
-                    <li><strong>Skills Section:</strong> Progress bars animate dynamically when they come into view, using Intersection Observer. Displays percentage values in real time, creating an engaging visualization.</li>
-                    <li><strong>Contact Section:</strong> A JavaScript-powered form validates inputs and displays notifications upon submission.</li>
-                    <li><strong>Timeline:</strong> Scroll-triggered animations reveal timeline items as they enter the viewport. Interactive modals provide detailed insights into my education and professional experiences.</li>
-                    <li><strong>Footer:</strong> Social media icons with hover effects and brand-specific colors enhance interactivity.</li>
-                    <li><strong>Time Feature:</strong> Displays a real-time clock with the current time in HH:MM:SS format. Includes a greeting message (“Good Morning,” “Good Afternoon,” “Good Evening”) based on the time of day.</li>
-                    <li><strong>Scroll-to-Top Button:</strong> Appears dynamically when the user scrolls down. Smoothly scrolls the page back to the top.</li>
-                    <li><strong>Background Music:</strong> Autoplay attempts on page load (with fallback for browser restrictions). Play/pause toggle controlled via a visual icon.</li>
-                    <li><strong>Map Integration:</strong> Displays an interactive map with OpenStreetMap integration. Dynamically updates marker positions and descriptions.</li>
+                    <li><strong>Hero Section:</strong> Displays rotating text like “4th Year Computing Student” and “IT
+                        Management.” Introduced smooth scrolling feature through JavaScript to provide a better user
+                        navigation experience.</li>
+                    <li><strong>About Me:</strong> Here you can find About Me (modal viewer with CV, fall back display
+                        for mobile) Functionality to create an interactive overview of professional data.</li>
+                    <li><strong>Projects:</strong> Contains project cards with hover animations to add a little
+                        interactivity. Includes an image carousel for project previews.</li>
+                    <li><strong>Skills Section:</strong> Progress bars animate dynamically when they come into view
+                        (using Intersection Observer). An eye catchy visualisation of percentage values being displayed
+                        on the real time.</li>
+                    <li><strong>Contact Section:</strong> A JavaScript-based form which validates inputs and sends
+                        notifications after completing.</li>
+                    <li><strong>Timeline:</strong> As you scroll, the timeline items get revealed as they hit the
+                        viewport. I have better view on information for my education and work experience available
+                        through interactive modals.</li>
+                    <li><strong>Footer:</strong> Hovering over the social media icons in the footer changes their color
+                        to the website or brand's specific color.</li>
+                    <li><strong>Time Feature:</strong> Show a live clock giving us current time in HH:MM:SS format. And
+                        a greeting message (“Good Morning,” “Good Afternoon,” “Good Evening”) depending on the time of
+                        the day.</li>
+                    <li><strong>Scroll-to-Top Button:</strong> Comes into view on dynamic scrolling. So this smoothly
+                        scrolls the page to the top.</li>
+                    <li><strong>Background Music:</strong> Play background music automatically on load (with fallback
+                        for broken browsers). An icon that toggles between play/pause, visually.</li>
+                    <li><strong>Map Integration:</strong> Provides an interactive map integrated with fetch API in
+                        OpenStreetMap that pinpoints my work experience location.</li>
                 </ul>
 
                 <h3>3. Accessibility</h3>
                 <ul>
-                    <li>Keyboard Navigation: Interactive elements such as modals are accessible via the Escape key.</li>
-                    <li>Responsive Design: Mobile-first design ensures usability across all screen sizes.</li>
+                    <li><strong>Keyboard Navigation:</strong> All interactive components like modals can be dismissed
+                        through the X button (which can also be closed by just clicking anywhere).</li>
+                    <li><strong>Responsive Design:</strong> Mobile-first design makes a website usable on any screen
+                        size.</li>
                 </ul>
 
                 <h3>4. Performance Observations</h3>
-                <p><strong>Strengths:</strong> Modular JavaScript and lazy-loading animations optimize performance. <strong>Opportunities:</strong> Implement debouncing and caching for further optimization.</p>
+                <p><strong>Strengths:</strong> Performance optimizations ensure that you get quick, responsive
+                    animations by using Modular JavaScript and lazy-loading.
 
                 <h3>5. Design Consistency</h3>
                 <ul>
-                    <li>Color Scheme: Predominantly uses dark backgrounds (#2C2C2C) with light text for contrast. Blue accents (#0077b5) highlight interactive elements.</li>
-                    <li>Fonts: The website employs a uniform font family (Verdana, Geneva, Tahoma, sans-serif) for readability.</li>
-                    <li>Spacing: Proper use of padding, margins, and grid-based layouts ensures clarity and balance.</li>
+                    <li><strong>Color Scheme:</strong> Uses mostly dark backgrounds (#2C2C2C) and light text for
+                        contrast. Interactive elements are highlighted by blue accents (#0077b5).</li>
+                    <li><strong>Fonts:</strong> The site uses a consistent font family (Verdana, Geneva, Tahoma,
+                        sans-serif) for easy reading.</li>
+                    <li><strong>Spacing:</strong> Logical use of padding, margin and grid-based layouts promote reading
+                        comprehension and a balanced UI.</li>
                 </ul>
             </article>
 
             <article>
                 <h2>Conclusion</h2>
                 <p>
-                    This portfolio showcases a robust implementation of modern web development techniques. By integrating Bootstrap features, custom JavaScript functionalities, and dynamic content, it delivers a seamless user experience. With minor optimizations and accessibility enhancements, the portfolio can achieve an even higher level of professionalism and functionality. This project demonstrates my ability to design and implement an engaging, responsive, and feature-rich website.
+                    This is a solid example of a modern web development portfolio. Combining Bootstrap elements,
+                    tailored JavaScript logic, and rich content, it offers an intuitive user interface. Just a few
+                    optimizations and accessibility improvements will take the portfolio to a higher level of
+                    professionalism and functionality. This project reflects my skills in creating a responsive,
+                    user-friendly and fully-functional website.
                 </p>
             </article>
         </section>
@@ -282,4 +327,5 @@
     <script src="js/openMapModal.js"></script>
     <script src="js/time.js"></script>
 </body>
+
 </html>
