@@ -230,7 +230,7 @@
 /* Modal Content */
 .cv-modal-content {
     background-color: #ffffff;
-    margin: 6% auto; /* Center modal vertically and horizontally */
+    margin: 7% auto; /* Center modal vertically and horizontally */
     width: 70%;
     height: 80%;
     border-radius: 8px;
@@ -290,4 +290,13 @@
 
 #cvFallback a {
     font-size: 1.1rem; /* Slightly larger button text */
+}
+
+/* mobile */
+@media (max-width: 767px) {
+    .cv-modal-content {
+        margin: 20% auto; /* Center modal vertically and horizontally */
+    width: 50%;
+    height: 35%;
+    }
 }
