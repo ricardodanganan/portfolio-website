@@ -19,7 +19,7 @@
     top: 0;
     width: 4px;
     height: 100%;
-    background-color: #007bff; /* Bright blue timeline line */
+    background-color: #0077b5; 
     transform: translateX(-50%);
     z-index: 0;
 }
@@ -57,7 +57,7 @@
     top: 15px;
     width: 20px;
     height: 20px;
-    background-color: #007bff; /* Bright blue dots */
+    background-color: #0077b5; /* Bright blue dots */
     border-radius: 50%;
     border: 3px solid #2C2C2C; /* Matches background color */
     z-index: 1;
@@ -103,8 +103,12 @@
 .education-timeline-date {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #007bff; /* Bright blue date */
+    color: #008fdb; 
     margin-bottom: 10px;
+}
+
+.education-timeline-content h5 {
+    color: #008fdb; 
 }
 
 /* Button Styling */

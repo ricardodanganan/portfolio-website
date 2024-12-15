@@ -61,7 +61,7 @@
 }
 
 .contact-button:hover {
-    background-color: #0088ff; /* Darker blue on hover */
+    background-color: #0088ff; 
     transform: scale(1.05); /* Slight scaling effect */
 }
 
