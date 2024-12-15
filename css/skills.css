@@ -32,12 +32,12 @@
 
 .skill-percentage {
     font-weight: bold;
-    color: #007bff; /* Matches the bar color */
+    color: #0085cc; /* Matches the bar color */
     font-size: 0.95rem;
 }
 
 .progress {
-    background-color: #007bff; /* Blue color */
+    background-color: #0085cc; /* Blue color */
     height: 100%;
     width: 0; /* Always starts at 0 */
     transition: width 0.5s ease-in-out; /* Smooth animation */

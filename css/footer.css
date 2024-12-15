@@ -4,8 +4,7 @@
     /* Dark background matching the hero section */
     color: #f5f5f5;
     /* Light text for readability */
-    border-top: 4px solid #007bff;
-    /* Blue accent border */
+    border-top: 1px solid #ffffff;
 }
 
 #footer p {
@@ -66,7 +65,7 @@
 
 /* Brand Colors */
 .github-icon:hover {
-    color: #757575; /* GitHub black */
+    color: #aaaaaa; /* GitHub black */
 }
 
 .linkedin-icon:hover {

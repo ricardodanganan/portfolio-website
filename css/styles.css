@@ -37,9 +37,6 @@ section {
     }
 }
 
-
-
-
 /* General Animation Styles for Scroll Effects */
 .scroll-element {
     opacity: 0;
@@ -121,17 +118,4 @@ section {
 
 /* End of Parallax Separator */
 
-/* Line Between Sections */
-.section-divider {
-    width: 90%;
-    /* Adjust width to suit the design */
-    height: 1px;
-    /* Thickness of the line */
-    background: #0d6efd;
-    /* Blue color for the line */
-    margin: 40px auto;
-    /* Center the line with spacing */
-    border: none;
-}
 
-/* End of Line Between Sections */
