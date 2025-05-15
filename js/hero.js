@@ -1,4 +1,4 @@
-const texts = ["4th Year Computing Student", "IT Management", "Future IT Professional"];
+const texts = ["Graduate IT Specialist", "Passionate About New Technology", "Always Learning, Always Building"];
 let index = 0;
 
 const animatedText = document.getElementById("animated-text");
